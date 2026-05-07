@@ -1,0 +1,78 @@
+{
+  "id": "arxiv",
+  "name": "arXiv.org",
+  "version": "1.0.0",
+  "url_patterns": [
+    "https://arxiv.org",
+    "https://arxiv.org/search/*",
+    "https://arxiv.org/abs/*"
+  ],
+  "test_url": "https://arxiv.org/search/?query=llm+agent&searchtype=all",
+  "output_schema": {
+    "search_results": {
+      "results": "array",
+      "total_results": "integer",
+      "page_start": "integer"
+    },
+    "paper_detail": {
+      "title": "string",
+      "abstract": "string"
+    }
+  },
+  "states": {
+    "home": {
+      "check": {
+        "type": "url_contains",
+        "value": "arxiv.org"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": ".arxiv-search-results",
+        "fallback_description": "arXiv 首页搜索框区域，无搜索结果列表"
+      },
+      "allowed_actions": ["search"]
+    },
+    "search_results": {
+      "check": {
+        "type": "url_contains",
+        "value": "/search/"
+      },
+      "also_check": {
+        "type": "element_present",
+        "selector": ".arxiv-result",
+        "fallback_description": "arXiv 搜索结果条目卡片，包含标题、作者、摘要预览"
+      },
+      "allowed_actions": ["paginate", "open_paper"]
+    },
+    "paper_detail": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/abs/\\d{4}\\.\\d+"
+      },
+      "allowed_actions": ["extract_content"]
+    },
+    "not_found": {
+      "check": {
+        "type": "element_present",
+        "selector": ".error-msg",
+        "fallback_description": "arXiv 404 错误页面，论文不存在"
+      },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "home": {
+      "search": "search_results"
+    },
+    "search_results": {
+      "paginate": "search_results",
+      "open_paper": "paper_detail"
+    }
+  },
+  "action_idempotency": {
+    "search": true,
+    "paginate": true,
+    "open_paper": true,
+    "extract_content": true
+  }
+}

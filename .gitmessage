@@ -1,0 +1,36 @@
+[ANBM-000] <type>(<scope>): <subject>
+#
+# 项目名称：Vernier — Deterministic Execution Layer for Visual Agents
+# 内部代号：anbm（用于代码、包名、环境变量）
+
+# type 可选值：
+#   feat     — 新功能（新增 adapter、新增 check 类型、新增 API 端点）
+#   fix      — Bug 修复
+#   docs     — 文档变更（README、VERSION.md、CLAUDE.md、adapter_authoring_guide）
+#   style    — 代码格式（不影响逻辑的空格、换行、import 排序等）
+#   refactor — 重构（不改变外部行为的代码结构调整）
+#   perf     — 性能优化
+#   test     — 测试变更（新增/修改测试，不包含被测代码变更）
+#   chore    — 杂项（依赖更新、CI 配置、.gitignore、脚本工具等）
+#
+# scope 可选值（影响模块）：
+#   core      — 引擎层（fsm / router / validator / session / retry_config）
+#   adapter   — 适配器层（handler.py / manifest.json）
+#   api       — API 层（routes / server）
+#   executor  — 执行层（browser / stealth）
+#   health    — 健康监控（checker / monitor / reporter / models）
+#   cli       — CLI 工具（check / status / repair）
+#   mcp       — MCP 服务
+#   client    — Python 客户端 SDK
+#   scripts   — 运维脚本（verify / lint / chaos / stress / benchmark）
+#   tests     — 测试基础设施（fixtures / mock）
+#   docs      — 文档
+#   config    — 配置（pyproject.toml / requirements.txt / .env.example）
+#
+# subject: 简短描述，不超过 50 字符，中文或英文，动词开头
+#
+# body（可选，空一行后填写详细说明）
+#
+# footer（可选）：关联 Issue
+#   Closes #123
+#   Refs: #456

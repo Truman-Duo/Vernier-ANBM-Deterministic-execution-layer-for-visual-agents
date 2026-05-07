@@ -1,0 +1,79 @@
+{
+  "id": "lobsters",
+  "name": "Lobsters",
+  "version": "1.0.0",
+  "test_url": "https://lobste.rs",
+  "url_patterns": [
+    "https://lobste.rs/*"
+  ],
+  "output_schema": {
+    "story_list": {
+      "stories": "array",
+      "total_results": "integer"
+    },
+    "story_detail": {
+      "title": "string",
+      "url": "string",
+      "tags": "array",
+      "score": "integer",
+      "comment_count": "integer",
+      "submitter": "string",
+      "description_html": "string",
+      "domain": "string"
+    }
+  },
+  "states": {
+    "story_list": {
+      "check": {
+        "type": "element_present",
+        "selector": "ol.stories.list",
+        "fallback_description": "故事列表容器，Lobsters 首页/标签页/搜索结果页的 ol.stories.list 元素"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "div.story_content"
+      },
+      "allowed_actions": ["filter_by_tag", "open_story", "search"]
+    },
+    "story_detail": {
+      "check": {
+        "type": "element_present",
+        "selector": "div.story_content",
+        "fallback_description": "故事详情内容区域，Lobsters 详情页专属元素"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "ol.stories.list"
+      },
+      "allowed_actions": ["extract_content"]
+    },
+    "not_found": {
+      "check": {
+        "type": "element_present",
+        "selector": ".box.wide",
+        "fallback_description": "404 错误提示容器，含 box wide 类"
+      },
+      "allowed_actions": ["filter_by_tag", "search"]
+    }
+  },
+  "transitions": {
+    "story_list": {
+      "filter_by_tag": "story_list",
+      "open_story": "story_detail",
+      "search": "story_list"
+    },
+    "story_detail": {
+      "extract_content": "story_detail"
+    },
+    "not_found": {
+      "filter_by_tag": "story_list",
+      "search": "story_list"
+    }
+  },
+  "action_idempotency": {
+    "filter_by_tag": true,
+    "open_story": true,
+    "search": true,
+    "extract_content": true
+  }
+}

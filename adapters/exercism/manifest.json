@@ -1,0 +1,35 @@
+{
+  "id": "exercism",
+  "name": "Exercism",
+  "version": "1.0.0",
+  "url_patterns": ["https://exercism.org/*"],
+  "test_url": "https://exercism.org/tracks",
+  "states": {
+    "track_list": {
+      "check": { "type": "element_present", "selector": "#page-tracks" },
+      "allowed_actions": ["open_track"]
+    },
+    "exercise_list": {
+      "check": { "type": "element_present", "selector": "#page-exercises-index" },
+      "allowed_actions": ["open_exercise", "extract_content"]
+    },
+    "exercise_detail": {
+      "check": { "type": "element_present", "selector": "#page-exercise-show" },
+      "allowed_actions": ["extract_content"]
+    },
+    "not_found": {
+      "check": { "type": "element_present", "selector": "#page-error" },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "track_list": { "open_track": "exercise_list" },
+    "exercise_list": { "open_exercise": "exercise_detail", "extract_content": "exercise_list" },
+    "exercise_detail": { "extract_content": "exercise_detail" }
+  },
+  "action_idempotency": {
+    "open_track": true,
+    "open_exercise": true,
+    "extract_content": true
+  }
+}

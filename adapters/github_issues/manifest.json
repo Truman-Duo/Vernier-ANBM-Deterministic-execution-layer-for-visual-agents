@@ -1,0 +1,79 @@
+{
+  "id": "github_issues",
+  "name": "GitHub Issues",
+  "version": "1.0.0",
+  "url_patterns": [
+    "https://github.com",
+    "github.com"
+  ],
+  "test_url": "https://github.com/python/cpython/issues",
+  "output_schema": {
+    "issue_list": {
+      "issues": "array"
+    },
+    "issue_detail": {
+      "title": "string",
+      "body": "string",
+      "state": "string",
+      "comments": "array"
+    }
+  },
+  "states": {
+    "issue_detail": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/issues/\\d+$"
+      },
+      "allowed_actions": ["post_comment", "close_issue"]
+    },
+    "issue_list": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/issues/?$"
+      },
+      "allowed_actions": ["paginate", "open_issue", "filter"]
+    },
+    "logged_in": {
+      "check": {
+        "type": "element_present",
+        "selector": "[aria-label=\"View profile and more\"]",
+        "fallback_description": "GitHub 页面右上角的用户头像菜单按钮，登录后显示当前用户头像"
+      },
+      "allowed_actions": ["navigate_to_repo"]
+    },
+    "not_logged_in": {
+      "check": {
+        "type": "element_absent",
+        "selector": "[aria-label=\"View profile and more\"]",
+        "fallback_description": "GitHub 页面右上角的用户头像按钮，未登录时不存在，通常在此位置显示 Sign in 按钮"
+      },
+      "allowed_actions": ["login"]
+    }
+  },
+  "transitions": {
+    "not_logged_in": {
+      "login": "logged_in"
+    },
+    "logged_in": {
+      "navigate_to_repo": "issue_list"
+    },
+    "issue_list": {
+      "paginate": "issue_list",
+      "open_issue": "issue_detail",
+      "filter": "issue_list"
+    },
+    "issue_detail": {
+      "post_comment": "issue_detail",
+      "close_issue": "issue_detail"
+    }
+  },
+  "action_idempotency": {
+    "login": false,
+    "navigate_to_repo": true,
+    "paginate": true,
+    "open_issue": true,
+    "filter": true,
+    "post_comment": false,
+    "close_issue": false
+  }
+}

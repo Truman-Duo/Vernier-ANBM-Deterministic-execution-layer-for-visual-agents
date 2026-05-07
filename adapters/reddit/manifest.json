@@ -1,0 +1,76 @@
+{
+  "id": "reddit",
+  "name": "Reddit",
+  "version": "1.0.0",
+  "url_patterns": [
+    "https://www.reddit.com",
+    "https://old.reddit.com"
+  ],
+  "test_url": "https://www.reddit.com/r/python",
+  "output_schema": {
+    "subreddit_feed": {
+      "posts": "array"
+    },
+    "post_detail": {
+      "title": "string",
+      "body": "string",
+      "score": "string",
+      "top_comments": "array"
+    }
+  },
+  "states": {
+    "post_detail": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/r/\\w+/comments/"
+      },
+      "allowed_actions": ["upvote_post", "extract_content"]
+    },
+    "subreddit_feed": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/r/\\w+/$"
+      },
+      "allowed_actions": ["paginate", "open_post", "upvote_post"]
+    },
+    "logged_in": {
+      "check": {
+        "type": "element_present",
+        "selector": "#user-info"
+      },
+      "allowed_actions": ["navigate_to_subreddit"]
+    },
+    "not_logged_in": {
+      "check": {
+        "type": "element_absent",
+        "selector": "#user-info"
+      },
+      "allowed_actions": ["login"]
+    }
+  },
+  "transitions": {
+    "not_logged_in": {
+      "login": "logged_in"
+    },
+    "logged_in": {
+      "navigate_to_subreddit": "subreddit_feed"
+    },
+    "subreddit_feed": {
+      "paginate": "subreddit_feed",
+      "open_post": "post_detail",
+      "upvote_post": "subreddit_feed"
+    },
+    "post_detail": {
+      "upvote_post": "post_detail",
+      "extract_content": "post_detail"
+    }
+  },
+  "action_idempotency": {
+    "login": false,
+    "navigate_to_subreddit": true,
+    "paginate": true,
+    "open_post": true,
+    "upvote_post": false,
+    "extract_content": true
+  }
+}

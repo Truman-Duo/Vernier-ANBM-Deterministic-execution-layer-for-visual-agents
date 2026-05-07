@@ -1,0 +1,41 @@
+{
+  "id": "hackernews",
+  "name": "Hacker News",
+  "version": "1.0.0",
+  "url_patterns": ["https://news.ycombinator.com/", "news.ycombinator.com"],
+  "test_url": "https://news.ycombinator.com/news",
+  "output_schema": {
+    "news_list": {
+      "stories": "list",
+      "pagination": "object"
+    },
+    "item_detail": {
+      "title": "string",
+      "url": "string",
+      "comments": "list"
+    }
+  },
+  "states": {
+    "item_detail": {
+      "check": {"type": "url_matches", "pattern": "/item\\?id=\\d+"},
+      "allowed_actions": ["open_item"]
+    },
+    "news_list": {
+      "check": {"type": "element_present", "selector": "tr.athing"},
+      "allowed_actions": ["paginate", "open_item"]
+    }
+  },
+  "transitions": {
+    "news_list": {
+      "paginate": "news_list",
+      "open_item": "item_detail"
+    },
+    "item_detail": {
+      "open_item": "item_detail"
+    }
+  },
+  "action_idempotency": {
+    "paginate": true,
+    "open_item": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "projectPrefix": "ANBM",
+  "allowPrefixChange": true,
+  "validTypes": ["feat", "fix", "docs", "style", "refactor", "perf", "test", "chore"],
+  "validScopes": [
+    "core",
+    "adapter",
+    "api",
+    "executor",
+    "health",
+    "cli",
+    "mcp",
+    "client",
+    "scripts",
+    "tests",
+    "docs",
+    "config"
+  ],
+  "requireScope": false,
+  "maxSubjectLength": 50,
+  "examples": [
+    "[ANBM-101] feat(adapter): 新增 arxiv 论文搜索适配器",
+    "[ANBM-102] feat(core): 新增 aria_present/aria_absent check 类型",
+    "[ANBM-103] fix(core): unknown 状态未降级导致 500 错误",
+    "[ANBM-104] refactor(health): SelectorCandidate 类型统一消除 union",
+    "[ANBM-105] test(adapter): 新增 Mastodon 单元测试 7 个",
+    "[ANBM-106] chore(config): 更新 .gitignore 规则"
+  ]
+}

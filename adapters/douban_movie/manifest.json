@@ -1,0 +1,49 @@
+{
+  "id": "douban_movie",
+  "name": "豆瓣电影 Top250",
+  "version": "1.0.0",
+  "url_patterns": [
+    "https://movie.douban.com/top250",
+    "https://movie.douban.com/subject/*"
+  ],
+  "test_url": "https://movie.douban.com/top250",
+  "output_schema": {
+    "movie_list": {
+      "movies": "array",
+      "pagination": "object"
+    },
+    "movie_detail": {
+      "title": "string",
+      "rating": "string"
+    }
+  },
+  "states": {
+    "movie_list": {
+      "check": {
+        "type": "element_present",
+        "selector": "ol.grid_view",
+        "fallback_description": "电影列表中每个电影条目，包含封面图、标题、评分的卡片单元"
+      },
+      "also_check": {
+        "type": "url_contains",
+        "value": "top250"
+      },
+      "allowed_actions": ["paginate"]
+    },
+    "movie_detail": {
+      "check": {
+        "type": "url_matches",
+        "pattern": "/subject/\\d+"
+      },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "movie_list": {
+      "paginate": "movie_list"
+    }
+  },
+  "action_idempotency": {
+    "paginate": true
+  }
+}

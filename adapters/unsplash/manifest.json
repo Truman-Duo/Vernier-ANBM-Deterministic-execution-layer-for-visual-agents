@@ -1,0 +1,62 @@
+{
+  "id": "unsplash",
+  "name": "Unsplash",
+  "version": "1.0.0",
+  "test_url": "https://unsplash.com",
+  "url_patterns": ["https://unsplash.com/*"],
+  "output_schema": {
+    "photo_grid": {
+      "photos": "array",
+      "has_more": "bool"
+    },
+    "photo_detail": {
+      "type": "string",
+      "src": "string",
+      "alt": "string",
+      "extractable": "bool",
+      "author": "string"
+    }
+  },
+  "states": {
+    "photo_grid": {
+      "check": {
+        "type": "element_present",
+        "selector": "[data-testid='asset-grid-masonry-figure']",
+        "fallback_description": "Unsplash 照片网格中的 masonry 布局图片卡片，含 data-testid 属性"
+      },
+      "also_check": {
+        "type": "url_contains",
+        "value": "unsplash.com"
+      },
+      "allowed_actions": ["search", "open_photo", "paginate"]
+    },
+    "photo_detail": {
+      "check": {
+        "type": "element_present",
+        "selector": "[data-testid='non-sponsored-photo-download-button']",
+        "fallback_description": "Unsplash 照片详情页的下载按钮，位于照片信息区域"
+      },
+      "also_check": {
+        "type": "url_matches",
+        "pattern": "/photos/[a-zA-Z0-9_-]+"
+      },
+      "allowed_actions": ["extract_content"]
+    }
+  },
+  "transitions": {
+    "photo_grid": {
+      "search": "photo_grid",
+      "open_photo": "photo_detail",
+      "paginate": "photo_grid"
+    },
+    "photo_detail": {
+      "extract_content": "photo_detail"
+    }
+  },
+  "action_idempotency": {
+    "search": true,
+    "open_photo": true,
+    "paginate": true,
+    "extract_content": true
+  }
+}

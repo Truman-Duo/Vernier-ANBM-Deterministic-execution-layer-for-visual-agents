@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anbm"
+version = "0.10.0a2"
+description = "Vernier — Deterministic Execution Layer for Visual Agents (internal codename: anbm)"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["anbm*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "network: tests that require real network access (skipped by default)",
+]
+
+[project.scripts]
+anbm = "anbm.cli.__main__:cli"

@@ -1,0 +1,95 @@
+{
+  "id": "devto",
+  "name": "DEV.to",
+  "version": "1.0.0",
+  "test_url": "https://dev.to",
+  "url_patterns": [
+    "https://dev.to/*"
+  ],
+  "output_schema": {
+    "feed": {
+      "articles": "array"
+    },
+    "article_detail": {
+      "id": "string",
+      "title": "string",
+      "body_text": "string",
+      "reactions_count": "integer",
+      "reading_list": "bool"
+    }
+  },
+  "states": {
+    "article_detail": {
+      "check": {
+        "type": "element_present",
+        "selector": "#article-body",
+        "fallback_description": "DEV.to 文章正文容器，唯一 ID，详情页专属"
+      },
+      "allowed_actions": ["like_post", "save_post", "extract_content"]
+    },
+    "feed": {
+      "check": {
+        "type": "element_present",
+        "selector": "div.articles-list",
+        "fallback_description": "DEV.to 首页文章流容器，含 crayons-story 卡片"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "#article-body"
+      },
+      "allowed_actions": ["open_article", "paginate"]
+    },
+    "not_logged_in": {
+      "check": {
+        "type": "element_present",
+        "selector": "a[aria-label=\"Log in\"]",
+        "fallback_description": "DEV.to 登录链接，未登录时在页面顶部导航栏固定显示"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "#article-body"
+      },
+      "allowed_actions": ["login"]
+    },
+    "logged_in": {
+      "check": {
+        "type": "element_absent",
+        "selector": "a[aria-label=\"Log in\"]"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "div.articles-list"
+      },
+      "allowed_actions": ["open_article"]
+    }
+  },
+  "transitions": {
+    "not_logged_in": {
+      "login": "logged_in"
+    },
+    "logged_in": {
+      "open_article": "feed"
+    },
+    "feed": {
+      "open_article": "article_detail",
+      "paginate": "feed"
+    },
+    "article_detail": {
+      "like_post": "article_detail",
+      "save_post": "article_detail",
+      "extract_content": "article_detail"
+    }
+  },
+  "action_idempotency": {
+    "login": false,
+    "open_article": true,
+    "like_post": false,
+    "save_post": false,
+    "paginate": true,
+    "extract_content": true
+  },
+  "action_side_effects": {
+    "like_post": "reactions_count",
+    "save_post": "reading_list_count"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "stackoverflow",
+  "name": "Stack Overflow",
+  "version": "1.0.0",
+  "url_patterns": [
+    "https://stackoverflow.com/questions",
+    "https://stackoverflow.com/questions/*"
+  ],
+  "test_url": "https://stackoverflow.com/questions",
+  "output_schema": {
+    "question_list": {
+      "questions": "array",
+      "pagination": "object"
+    },
+    "question_detail": {
+      "title": "string",
+      "body_text": "string",
+      "vote_count": "string",
+      "tags": "array",
+      "answer_count": "string"
+    },
+    "search_results": {
+      "questions": "array",
+      "pagination": "object"
+    }
+  },
+  "states": {
+    "question_list": {
+      "check": {"type": "url_matches", "pattern": "/questions$"},
+      "also_check": {
+        "type": "aria_present",
+        "role": "article",
+        "fallback_description": "Stack Overflow 问题列表中每道问题的卡片容器，包含标题、投票数、标签"
+      },
+      "allowed_actions": ["paginate", "open_question", "search"]
+    },
+    "question_detail": {
+      "check": {"type": "url_matches", "pattern": "/questions/\\d+/"},
+      "allowed_actions": ["upvote", "extract_content"]
+    },
+    "search_results": {
+      "check": {"type": "url_contains", "value": "/search?"},
+      "allowed_actions": ["paginate", "open_question"]
+    },
+    "not_found": {
+      "check": {
+        "type": "element_present",
+        "selector": "[data-se-page='404']",
+        "fallback_description": "Stack Overflow 404 错误页面，URL 对应的问题不存在"
+      },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "question_list": {
+      "open_question": "question_detail",
+      "paginate": "question_list",
+      "search": "search_results"
+    },
+    "question_detail": {
+      "upvote": "question_detail"
+    },
+    "search_results": {
+      "open_question": "question_detail",
+      "paginate": "search_results"
+    }
+  },
+  "action_idempotency": {
+    "paginate": true,
+    "open_question": true,
+    "search": true,
+    "extract_content": true,
+    "upvote": false
+  }
+}

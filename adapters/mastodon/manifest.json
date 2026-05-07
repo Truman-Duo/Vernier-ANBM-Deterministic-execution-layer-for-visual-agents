@@ -1,0 +1,54 @@
+{
+  "id": "mastodon",
+  "name": "Mastodon (via hachyderm.io)",
+  "version": "1.0.0",
+  "test_url": "https://hachyderm.io/public/local",
+  "url_patterns": [
+    "https://hachyderm.io/*",
+    "https://mastodon.social/*"
+  ],
+  "output_schema": {
+    "feed_partial": {
+      "statuses": "array",
+      "has_more": "bool"
+    },
+    "feed_exhausted": {
+      "statuses": "array",
+      "has_more": "bool"
+    }
+  },
+  "states": {
+    "feed_partial": {
+      "check": {
+        "type": "element_present",
+        "selector": "article[data-id]",
+        "fallback_description": "Mastodon 时间线中已加载的状态条目 article 元素，含唯一 data-id 属性"
+      },
+      "also_check": {
+        "type": "url_contains",
+        "value": "/public"
+      },
+      "allowed_actions": ["scroll_load_more"]
+    },
+    "feed_exhausted": {
+      "check": {
+        "type": "url_contains",
+        "value": "/public"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "article[data-id]"
+      },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "feed_partial": {
+      "scroll_load_more": "feed_partial"
+    },
+    "feed_exhausted": {}
+  },
+  "action_idempotency": {
+    "scroll_load_more": true
+  }
+}

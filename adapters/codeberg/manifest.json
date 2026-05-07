@@ -1,0 +1,95 @@
+{
+  "id": "codeberg",
+  "name": "Codeberg",
+  "version": "1.0.0",
+  "test_url": "https://codeberg.org/forgejo/forgejo/issues",
+  "url_patterns": [
+    "https://codeberg.org/*"
+  ],
+  "output_schema": {
+    "issue_list": {
+      "issues": "array"
+    },
+    "issue_detail": {
+      "title": "string",
+      "body": "string",
+      "state": "string",
+      "assignees": "array"
+    }
+  },
+  "states": {
+    "issue_detail": {
+      "check": {
+        "type": "element_present",
+        "selector": ".page-content.repository.view.issue",
+        "fallback_description": "Codeberg issue/PR 详情页容器，含 sidebar（assignees/labels）"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "div.issue-card"
+      },
+      "allowed_actions": ["assign_issue"]
+    },
+    "issue_list": {
+      "check": {
+        "type": "element_present",
+        "selector": ".page-content.repository.issue-list",
+        "fallback_description": "Codeberg issue 列表页容器，含 issue-card 卡片"
+      },
+      "also_check": {
+        "type": "element_present",
+        "selector": "div.issue-card"
+      },
+      "allowed_actions": ["open_issue", "paginate", "filter_by_label"]
+    },
+    "not_logged_in": {
+      "check": {
+        "type": "element_present",
+        "selector": "a[href^=\"/user/login\"]",
+        "fallback_description": "Codeberg 导航栏 Sign in 链接，未登录时显示"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": ".page-content.repository.issue-list"
+      },
+      "allowed_actions": ["login"]
+    },
+    "logged_in": {
+      "check": {
+        "type": "element_absent",
+        "selector": "a[href^=\"/user/login\"]"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": ".page-content.repository.issue-list"
+      },
+      "allowed_actions": ["open_issue"]
+    }
+  },
+  "transitions": {
+    "not_logged_in": {
+      "login": "logged_in"
+    },
+    "logged_in": {
+      "open_issue": "issue_list"
+    },
+    "issue_list": {
+      "open_issue": "issue_detail",
+      "paginate": "issue_list",
+      "filter_by_label": "issue_list"
+    },
+    "issue_detail": {
+      "assign_issue": "issue_detail"
+    }
+  },
+  "action_idempotency": {
+    "login": false,
+    "open_issue": true,
+    "assign_issue": false,
+    "paginate": true,
+    "filter_by_label": true
+  },
+  "action_side_effects": {
+    "assign_issue": "assignees"
+  }
+}

@@ -1,0 +1,50 @@
+# === Python 字节码 ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === 虚拟环境 ===
+.venv/
+venv/
+env/
+.env
+.venv-*
+
+# === 测试与构建 ===
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# === AI 工作配置（本地保留，不上传） ===
+CLAUDE.md
+.claude/
+
+# === 运行时数据 ===
+.cookies/
+sessions.db
+sessions.db-journal
+sessions.db-wal
+
+# === 备份文件 ===
+*.bak
+*~
+
+# === 基准测试结果（历史文件） ===
+scripts/benchmark/results/*.json
+docs/baselines/*.json
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+Thumbs.db
+.DS_Store
+
+# === 日志 ===
+*.log

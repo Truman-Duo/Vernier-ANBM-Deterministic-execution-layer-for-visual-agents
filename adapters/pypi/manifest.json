@@ -1,0 +1,78 @@
+{
+  "id": "pypi",
+  "name": "PyPI",
+  "version": "1.0.0",
+  "test_url": "https://pypi.org/search/?q=requests",
+  "url_patterns": [
+    "https://pypi.org/search/*",
+    "https://pypi.org/project/*"
+  ],
+  "output_schema": {
+    "project_list": {
+      "projects": "array",
+      "total_results": "integer",
+      "query": "string"
+    },
+    "project_detail": {
+      "name": "string",
+      "version": "string",
+      "summary": "string",
+      "github_url": "string",
+      "license": "string",
+      "requires_python": "string"
+    }
+  },
+  "states": {
+    "project_list": {
+      "check": {
+        "type": "element_present",
+        "selector": "[data-controller='search']",
+        "fallback_description": "搜索结果容器，含 data-controller=search 属性"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "#description"
+      },
+      "allowed_actions": ["filter_version", "open_project", "paginate"]
+    },
+    "project_detail": {
+      "check": {
+        "type": "element_present",
+        "selector": "#description",
+        "fallback_description": "包描述区域，PyPI 详情页专属元素"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "[data-controller='search']"
+      },
+      "allowed_actions": ["extract_content"]
+    },
+    "not_found": {
+      "check": {
+        "type": "element_present",
+        "selector": ".no-results",
+        "fallback_description": "搜索无结果提示区域"
+      },
+      "allowed_actions": ["filter_version"]
+    }
+  },
+  "transitions": {
+    "project_list": {
+      "filter_version": "project_list",
+      "open_project": "project_detail",
+      "paginate": "project_list"
+    },
+    "project_detail": {
+      "extract_content": "project_detail"
+    },
+    "not_found": {
+      "filter_version": "project_list"
+    }
+  },
+  "action_idempotency": {
+    "filter_version": true,
+    "open_project": true,
+    "paginate": true,
+    "extract_content": true
+  }
+}

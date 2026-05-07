@@ -1,0 +1,32 @@
+{
+  "id": "wikipedia",
+  "name": "Wikipedia",
+  "version": "1.0.0",
+  "url_patterns": ["https://en.wikipedia.org/wiki/"],
+  "test_url": "https://en.wikipedia.org/wiki/Web_scraping",
+  "output_schema": {
+    "article": {
+      "title": "string",
+      "summary": "string",
+      "sections": "list",
+      "language_links": "list"
+    }
+  },
+  "states": {
+    "article": {
+      "check": {"type": "url_matches", "pattern": "/wiki/(?!Special:|File:|Talk:|User:|Wikipedia:|Help:|Portal:|Template:|Category:|Module:|MediaWiki:)"},
+      "allowed_actions": ["navigate_link"]
+    },
+    "special_page": {
+      "check": {"type": "url_contains", "value": "/wiki/Special:"},
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "article": {"navigate_link": "article"},
+    "special_page": {}
+  },
+  "action_idempotency": {
+    "navigate_link": true
+  }
+}

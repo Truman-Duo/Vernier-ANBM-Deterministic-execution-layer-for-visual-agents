@@ -1,0 +1,66 @@
+{
+  "id": "mdn",
+  "name": "MDN Web Docs",
+  "version": "1.0.0",
+  "test_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "url_patterns": ["https://developer.mozilla.org/*"],
+  "output_schema": {
+    "article": {
+      "title": "string",
+      "content_blocks": "array"
+    },
+    "search_results": {
+      "content_blocks": "array"
+    }
+  },
+  "states": {
+    "article": {
+      "check": {
+        "type": "element_present",
+        "selector": "h1",
+        "fallback_description": "MDN 文档页面的主标题 h1 元素"
+      },
+      "also_check": {
+        "type": "url_contains",
+        "value": "/docs/"
+      },
+      "allowed_actions": ["extract_content", "open_section"]
+    },
+    "search_results": {
+      "check": {
+        "type": "url_contains",
+        "value": "/search"
+      },
+      "also_check": {
+        "type": "element_present",
+        "selector": "h1"
+      },
+      "allowed_actions": ["extract_content"]
+    },
+    "not_found": {
+      "check": {
+        "type": "url_contains",
+        "value": "/docs/"
+      },
+      "also_check": {
+        "type": "element_absent",
+        "selector": "h1"
+      },
+      "allowed_actions": []
+    }
+  },
+  "transitions": {
+    "article": {
+      "extract_content": "article",
+      "open_section": "article"
+    },
+    "search_results": {
+      "extract_content": "search_results"
+    },
+    "not_found": {}
+  },
+  "action_idempotency": {
+    "extract_content": true,
+    "open_section": true
+  }
+}
