@@ -215,3 +215,78 @@ Step 3: extract_content    → deterministic ✅ (attempts=1)
 3. Reddit adapter 标记为 headless 限制，非代码 bug
 4. 验证工具链完善（httpx 超时、GBK、除零保护、cookie 传递）
 5. alpha.2 核心目标达成，遗留为非阻塞项
+
+---
+
+## v0.10.0-beta.1（2026-05-17）
+
+**测试环境**：
+- OS：Windows 11
+- Python：3.12.6
+- Playwright：Chromium 145.0.7632.6（未启动服务端测试）
+- uvicorn：0.46.0（未启动服务端测试）
+
+### 变更
+
+| 任务 | 文件 | 说明 |
+|------|------|------|
+| PyPI adapter 修复 | `adapters/pypi/manifest.json`, `handler.py` | 5 个选择器更新：状态检测、包名、翻页、结果总数、not_found |
+| SO adapter 修复 | `adapters/stackoverflow/manifest.json`, `handler.py` | 7 个选择器更新：卡片容器、投票数、回答数、翻页、搜索框、404检测 |
+| SO HTML fixture 更新 | `tests/fixtures/html_snapshots/stackoverflow/question_list.html` | 与新版 Stacks 设计系统 DOM 对齐 |
+| SO 集成测试更新 | `tests/integration/test_stackoverflow.py` | manifest mock、page locator、selector test 同步 |
+| last_verified 追踪 | 全部 15 个 `adapters/*/manifest.json` | 新增 `last_verified` 字段，区分三级验证状态 |
+| 文档更新 | CLAUDE.md、CHANGELOG.md、TEST_LOG.md、TEST_PLAN_v0.10.0_beta1.md | 当前阶段描述、变更记录、下一步计划 |
+
+### Bridge 验证系统
+
+Cowork VM 无法访问外网，自建了 Chrome 扩展验证链路：
+- `bridge_server.py`：stdio HTTP 中继
+- `.bridge/extension/`：Chrome MV3 扩展（content.js + popup.js）
+- 已扫描 8 个站点，识别出 PyPI 和 SO 的选择器腐烂
+
+Bridge 有 5 个已知 bug（详见 `VERIFICATION_HANDOFF.md` 1.5 节），最关键的是 content.js JSON 转义问题。
+
+### 测试结果
+
+| 测试项 | 结果 | 说明 |
+|--------|------|------|
+| 单元测试 | ✅ | 126/126 PASS |
+| lint | ✅ | 15/15 PASS |
+| HN verify | — | 未执行（选择器未变，上次 5/5 deterministic） |
+| GitHub verify | — | 未执行（选择器未变，上次 3/3 deterministic） |
+| PyPI verify | — | 待服务器启动 + 网络执行（选择器已更新） |
+| SO verify | — | 待服务器启动 + 网络执行（选择器已更新） |
+| 集成测试 86 个 | — | 待服务器启动 + 网络执行 |
+| Chaos test | — | 待服务器启动 |
+| Stress test | — | 待服务器启动 |
+
+### 选择器新鲜度状态
+
+| 已验证（7） | 日期 | 方式 |
+|---|---|---|
+| hackernews | 2026-05-07 | verify 脚本 |
+| github_issues | 2026-05-07 | verify 脚本 |
+| lobsters | 2026-05-17 | bridge DOM 快照 |
+| pypi | 2026-05-17 | bridge DOM 快照 → 已修复 |
+| stackoverflow | 2026-05-17 | bridge DOM 快照 → 已修复 |
+| douban_movie | 2026-05-07 | chaos_test |
+| reddit | 2026-05-07 | headless 封锁（非代码问题） |
+
+| 部分验证（2） | 日期 | 阻塞原因 |
+|---|---|---|
+| arxiv | null | bridge JSON 转义 bug 导致快照损坏 |
+| wikipedia | null | 快照未分析 |
+
+| 未验证（6） |
+|---|
+| devto、codeberg、mastodon、unsplash、mdn、exercism |
+
+### 下一步（优先级排序）
+
+1. **修 bridge content.js JSON 转义 bug**（阻塞 arxiv + 剩余 6 个扫描）
+2. **启动服务 + 跑 PyPI/SO verify**（确认修复有效）
+3. **跑全量集成测试**（86 个，需网络）
+4. **实施 T5.3 URL 漂移检测**（beta.1 唯一代码改进，工作量小收益明确）
+5. **扫描剩余 adapter**（需先修 bridge bug）
+6. **端到端 repair 流程验证**（故意破坏一个 selector，跑 repair 全流程）
+7. **更新 VERSION.md 至 v0.10.0-beta.1**

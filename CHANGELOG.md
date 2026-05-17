@@ -139,7 +139,64 @@ Mastodon 适配器，2 个状态表达无限滚动场景。`feed_partial`（还�
 
 ---
 
-## 当前能力范围（v0.9.9）
+### Phase 10（v0.10.0-beta.1）：Adapter 腐烂修复与验证体系建立
+
+**时间**：2026-05-17
+
+核心目标：修复真实环境验证中发现的选择器腐烂问题，建立系统化的选择器新鲜度追踪。
+
+#### Bridge 验证系统
+
+Cowork 因 VM 沙箱阻断外部网络，自建了一套 Chrome 扩展验证系统：
+- `bridge_server.py`：Python stdlib HTTP 中继（localhost:8765）
+- `.bridge/extension/`：Chrome MV3 扩展（content.js DOM 扫描 + popup 控制面板）
+- 工作流：打开目标网站 → 扩展扫描 DOM → 快照写入 `.bridge/sites/` → 分析 → 写验证任务 → 执行 → 结果写入 `.bridge/results/`
+
+Bridge 有 5 个已知 bug（详见 VERIFICATION_HANDOFF.md），最严重的是 content.js JSON 转义问题。
+
+#### Adapter 腐烂修复
+
+**PyPI**（5 个选择器失效）：
+- 状态检测：`[data-controller='search']` → `url_contains /search/` + `also_check .package-snippet`
+- 包名：`.package-snippet__name` → `.package-snippet__title`
+- 版本号：`.package-snippet__version` 已从列表页移除 → handler 中 version 字段置空
+- 翻页：`[aria-label='Next Page']` → `.button-group--pagination a.button-group__button`
+- 结果总数：`.search-results__total` 已移除 → JS 从 aria-label 提取 + 回退计数
+
+**Stack Overflow**（7 个选择器失效）：
+- 卡片容器：`[role="article"]` → `.s-post-summary`
+- 投票数：`[itemprop="upvoteCount"]` → `.s-post-summary--stats-item__emphasized .s-post-summary--stats-item-number`
+- 回答数：`[aria-label$="answers"]` → `.s-post-summary--stats-item.has-answers .s-post-summary--stats-item-number`
+- 翻页：`[rel="next"]` → JS 查找 `.s-pagination .is-selected` 的下一个 sibling
+- 搜索框：`[role="searchbox"]` → `[role="combobox"]`
+- 404 检测：`[data-se-page='404']` → `element_absent .s-post-summary`
+
+#### 选择器新鲜度追踪
+
+全部 15 个 manifest.json 新增 `last_verified` 字段：
+
+| 状态 | 数量 | Adapter |
+|------|------|---------|
+| 已验证（有日期） | 7 | HN、GitHub (05-07), Lobsters (05-17), PyPI、SO (05-17), douban_movie、Reddit-blocked (05-07) |
+| 部分验证（null + note） | 2 | arxiv、wikipedia |
+| 未验证（null） | 6 | devto、codeberg、mastodon、unsplash、mdn、exercism |
+
+#### 方案缺口更新
+
+| 方案 | 状态 | beta.1 行动 |
+|------|------|------------|
+| T5.1 LLM selector + 人工确认 | ✅ 已实施 | 端到端 repair 验证（待做） |
+| T5.2 double-check | ❌ 缺失 | 暂缓 |
+| **T5.3 URL 漂移检测** | ⚠️ 部分 | **beta.1 优先实施** |
+| T5.4 soft fallback | ⚠️ 部分 | 暂缓 |
+| T5.5 per-action retry | ❌ 缺失 | 推迟 v0.11.0 |
+| T5.6 加载确认信号 | ❌ 缺失 | 推迟 v0.11.0 |
+
+#### 测试基线
+
+- 单元测试：126/126 PASS
+- Lint：15/15 PASS
+- 集成测试：未执行（需网络 + 启动服务）
 
 ### 核心系统
 
@@ -167,7 +224,7 @@ Mastodon 适配器，2 个状态表达无限滚动场景。`feed_partial`（还�
 
 ### 测试覆盖
 
-- **单元测试**：119 个
+- **单元测试**：126 个
 - **集成测试**：86 个（全部 @pytest.mark.network）
 - **对应网站**：15 个适配器各有 4-7 个集成测试
 - **lint**：15/15 PASS（适配器静态检查）
