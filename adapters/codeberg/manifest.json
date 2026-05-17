@@ -2,6 +2,7 @@
   "id": "codeberg",
   "name": "Codeberg",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "test_url": "https://codeberg.org/forgejo/forgejo/issues",
   "url_patterns": [
     "https://codeberg.org/*"

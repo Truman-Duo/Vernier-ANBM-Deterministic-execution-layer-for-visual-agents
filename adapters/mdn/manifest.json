@@ -2,6 +2,7 @@
   "id": "mdn",
   "name": "MDN Web Docs",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "test_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
   "url_patterns": ["https://developer.mozilla.org/*"],
   "output_schema": {

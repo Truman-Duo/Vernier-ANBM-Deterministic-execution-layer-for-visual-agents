@@ -2,6 +2,7 @@
   "id": "douban_movie",
   "name": "豆瓣电影 Top250",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "url_patterns": [
     "https://movie.douban.com/top250",
     "https://movie.douban.com/subject/*"

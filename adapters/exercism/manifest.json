@@ -2,6 +2,7 @@
   "id": "exercism",
   "name": "Exercism",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "url_patterns": ["https://exercism.org/*"],
   "test_url": "https://exercism.org/tracks",
   "states": {

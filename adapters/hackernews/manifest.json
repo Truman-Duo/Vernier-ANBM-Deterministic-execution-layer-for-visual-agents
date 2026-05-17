@@ -2,6 +2,7 @@
   "id": "hackernews",
   "name": "Hacker News",
   "version": "1.0.0",
+  "last_verified": "2026-05-07",
   "url_patterns": ["https://news.ycombinator.com/", "news.ycombinator.com"],
   "test_url": "https://news.ycombinator.com/news",
   "output_schema": {

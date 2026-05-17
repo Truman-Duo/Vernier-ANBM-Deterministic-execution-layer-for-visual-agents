@@ -2,6 +2,8 @@
   "id": "arxiv",
   "name": "arXiv.org",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "unverified_note": "论文详情页未经 bridge 扫描。搜索页选择器已确认有效，a[href*='/abs/'] 已修复。",
   "url_patterns": [
     "https://arxiv.org",
     "https://arxiv.org/search/*",

@@ -2,6 +2,7 @@
   "id": "lobsters",
   "name": "Lobsters",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "test_url": "https://lobste.rs",
   "url_patterns": [
     "https://lobste.rs/*"

@@ -2,6 +2,8 @@
   "id": "wikipedia",
   "name": "Wikipedia",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "unverified_note": "a.interlanguage-link-target 已移除（Wikipedia 改版为 #p-lang-btn 下拉菜单）。语言链接功能降级为空列表。",
   "url_patterns": ["https://en.wikipedia.org/wiki/"],
   "test_url": "https://en.wikipedia.org/wiki/Web_scraping",
   "output_schema": {

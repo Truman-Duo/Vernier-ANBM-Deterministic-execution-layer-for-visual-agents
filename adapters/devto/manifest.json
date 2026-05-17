@@ -2,6 +2,7 @@
   "id": "devto",
   "name": "DEV.to",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
   "test_url": "https://dev.to",
   "url_patterns": [
     "https://dev.to/*"

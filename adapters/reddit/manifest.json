@@ -2,6 +2,8 @@
   "id": "reddit",
   "name": "Reddit",
   "version": "1.0.0",
+  "last_verified": "2026-05-07",
+  "unverified_note": "Reddit 服务器端封锁 headless Chromium，非 ANBM 选择器问题。TLS/HTTP 指纹检测阻止所有 headless 浏览器访问。",
   "url_patterns": [
     "https://www.reddit.com",
     "https://old.reddit.com"
