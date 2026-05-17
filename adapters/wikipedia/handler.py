@@ -39,9 +39,12 @@ class Handler(BaseAdapter):
                         value = (await td.text_content()).strip()
                         infobox[key] = value
 
+            # 2026-05 Wikipedia 改版：interlanguage-link-target 已移除，改为 #p-lang-btn 下拉菜单
             lang_els = await page.query_selector_all(
                 "a.interlanguage-link-target"
             )
+            if not lang_els:
+                lang_els = await page.query_selector_all("#p-lang-btn")
             language_links = []
             for a in lang_els:
                 lang = await a.get_attribute("lang") or ""

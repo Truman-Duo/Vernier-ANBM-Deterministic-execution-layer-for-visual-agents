@@ -1,7 +1,7 @@
 """
 Unsplash Adapter
 选择器选择理由：
-- photo_grid state: [data-testid="asset-grid-masonry-figure"] — React 渲染后的 masonry 照片卡片
+- photo_grid state: [data-testid="photos-feed-route"] — React 渲染后的照片 feed（2026-05 更名，旧名 asset-grid-masonry-figure）
 - photo_detail state: [data-testid="non-sponsored-photo-download-button"] — 照片详情页下载按钮
 - 搜索输入: [data-testid="nav-bar-search-form-input"] — 导航栏搜索框
 - Unsplash 使用 CSS-in-JS，class 名为哈希值，不可作为选择器
@@ -33,16 +33,16 @@ class Handler(BaseAdapter):
 
     async def _extract_photo_grid(self, page):
         await page.wait_for_selector(
-            '[data-testid="asset-grid-masonry-figure"]', timeout=10000
+            '[data-testid="photos-feed-route"]', timeout=10000
         )
 
         figures = await page.query_selector_all(
-            '[data-testid="asset-grid-masonry-figure"]'
+            '[data-testid="photos-feed-route"]'
         )
         if not figures:
             raise SelectorFailedError(
                 "找不到照片网格",
-                selector="[data-testid='asset-grid-masonry-figure']",
+                selector="[data-testid='photos-feed-route']",
             )
 
         photos = []

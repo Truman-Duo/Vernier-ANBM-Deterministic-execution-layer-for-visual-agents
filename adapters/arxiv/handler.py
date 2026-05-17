@@ -38,10 +38,10 @@ class Handler(BaseAdapter):
             title = (await title_el.text_content()).strip() if title_el else ""
 
             href = ""
-            link_el = await item.query_selector("a[href^='/abs/']")
+            link_el = await item.query_selector("a[href*='/abs/']")
             if link_el:
                 href = await link_el.get_attribute("href") or ""
-            url = f"https://arxiv.org{href}" if href else ""
+            url = href if href.startswith("http") else f"https://arxiv.org{href}"
 
             if not pid and href:
                 pid = href.split("/abs/")[-1].split("?")[0]

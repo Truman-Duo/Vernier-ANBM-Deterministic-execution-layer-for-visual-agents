@@ -2,6 +2,8 @@
   "id": "unsplash",
   "name": "Unsplash",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "unverified_note": "photo_detail 状态未经 bridge 扫描。photo_grid 选择器 2026-05-17 更新为 photos-feed-route。",
   "test_url": "https://unsplash.com",
   "url_patterns": ["https://unsplash.com/*"],
   "output_schema": {
@@ -21,7 +23,7 @@
     "photo_grid": {
       "check": {
         "type": "element_present",
-        "selector": "[data-testid='asset-grid-masonry-figure']",
+        "selector": "[data-testid='photos-feed-route']",
         "fallback_description": "Unsplash 照片网格中的 masonry 布局图片卡片，含 data-testid 属性"
       },
       "also_check": {

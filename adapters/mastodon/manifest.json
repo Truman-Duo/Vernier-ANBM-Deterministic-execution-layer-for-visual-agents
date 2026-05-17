@@ -2,6 +2,8 @@
   "id": "mastodon",
   "name": "Mastodon (via hachyderm.io)",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "unverified_note": "hachyderm.io 公开时间线不返回 article[data-id] 元素。需要登录 Mastodon 实例才能验证完整 feed 结构。",
   "test_url": "https://hachyderm.io/public/local",
   "url_patterns": [
     "https://hachyderm.io/*",
