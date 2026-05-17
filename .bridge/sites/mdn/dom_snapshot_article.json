@@ -1,0 +1,3212 @@
+{
+  "adapter_id": "mdn",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "title": "HTML: HyperText Markup Language | MDN",
+  "timestamp": "2026-05-17T13:53:24.832Z",
+  "elements": [
+    {
+      "tag": "ul",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "a11y-menu"
+      },
+      "children": [
+        {
+          "tag": "li",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Skip to main content",
+              "attrs": {
+                "href": "#content"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "li",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Skip to search",
+              "attrs": {
+                "href": "#search"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "header",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "page-layout__header"
+      },
+      "children": [
+        {
+          "tag": "nav",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "navigation"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "navigation__logo"
+              },
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "logo",
+                    "href": "/en-US/"
+                  },
+                  "children": [
+                    {
+                      "tag": "svg",
+                      "role": "img",
+                      "text": "",
+                      "attrs": {
+                        "class": "logo__image"
+                      },
+                      "children": [
+                        {
+                          "tag": "title",
+                          "role": "",
+                          "text": "MDN",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "path",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "logo__letter"
+                          }
+                        },
+                        {
+                          "tag": "path",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "logo__text"
+                          }
+                        },
+                        {
+                          "tag": "path",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "logo__cursor"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "navigation__search"
+              },
+              "children": [
+                {
+                  "tag": "mdn-search-button",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                }
+              ]
+            },
+            {
+              "tag": "button",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "navigation__button",
+                "type": "button"
+              },
+              "aria": {
+                "aria-expanded": "false",
+                "aria-controls": "navigation__popup",
+                "aria-label": "Toggle navigation"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "mdn-search-modal",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "id": "search"
+          }
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "breadcrumbs-bar"
+          },
+          "children": [
+            {
+              "tag": "mdn-toggle-sidebar",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "ol",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "breadcrumbs"
+              },
+              "children": [
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "href": "/en-US/docs/Web"
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "role": "",
+                          "text": "Web",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "href": "/en-US/docs/Web/HTML"
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "role": "",
+                          "text": "HTML",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "mdn-collection-save-button",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "mdn-color-theme",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "mdn-language-switcher",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "page-layout__main"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "layout__2-sidebars-inline reference-layout"
+          },
+          "children": [
+            {
+              "tag": "main",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "content",
+                "class": "layout__content"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "layout__header reference-layout__header"
+                  },
+                  "children": [
+                    {
+                      "tag": "mdn-survey",
+                      "role": "",
+                      "text": "",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "h1",
+                      "role": "",
+                      "text": "HTML: HyperText Markup Language",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "children": [
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "(HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page'",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "strong",
+                              "role": "",
+                              "text": "HTML",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "CSS",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/CSS"
+                              }
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "JavaScript",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/JavaScript"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "\"Hypertext\" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet a",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "HTML uses \"markup\" to annotate text, images, and other content for display in a Web browser. HTML markup includes special \"elements\" such as,,,,,,,,,,,,,,,,,,,,,,,,and many others.",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/head"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<head>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/title"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<title>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/body"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<body>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/header"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<header>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/footer"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<footer>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/article"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<article>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/section"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<section>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/p"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<p>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/div"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<div>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/span"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<span>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/img"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<img>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/aside"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<aside>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/audio"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<audio>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/canvas"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<canvas>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/datalist"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<datalist>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/details"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<details>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/embed"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<embed>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/nav"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<nav>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/search"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<search>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/output"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<output>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/progress"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<progress>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/video"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<video>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/ul"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<ul>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/ol"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<ol>",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference/Elements/li"
+                              },
+                              "children": [
+                                {
+                                  "tag": "code",
+                                  "role": "",
+                                  "text": "<li>",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "An HTML element is set off from other text in a document by \"tags\", which consist of the element name surrounded byand. The name of an element inside a tag is case-insensitive. That is, it can be writ",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "code",
+                              "role": "",
+                              "text": "<",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "code",
+                              "role": "",
+                              "text": ">",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "code",
+                              "role": "",
+                              "text": "<title>",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "code",
+                              "role": "",
+                              "text": "<Title>",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "code",
+                              "role": "",
+                              "text": "<TITLE>",
+                              "attrs": {}
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "The articles below can help you learn more about HTML.",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "aside",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "layout__right-sidebar reference-layout__toc"
+                  },
+                  "children": [
+                    {
+                      "tag": "nav",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "reference-toc"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "In this article",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Beginner's tutorials",
+                                  "attrs": {
+                                    "href": "#beginners_tutorials"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Guides",
+                                  "attrs": {
+                                    "href": "#guides"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "How to",
+                                  "attrs": {
+                                    "href": "#how_to"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Reference",
+                                  "attrs": {
+                                    "href": "#reference"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Related topics",
+                                  "attrs": {
+                                    "href": "#related_topics"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "mdn-placement-sidebar",
+                      "role": "",
+                      "text": "",
+                      "attrs": {}
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "layout__body reference-layout__body"
+                  },
+                  "children": [
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "beginners_tutorials"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "beginners_tutorials",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Beginner's tutorials",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#beginners_tutorials"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "Ourcontain modern, up-to-date tutorials covering HTML fundamentals.",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "learn web development core modules",
+                              "attrs": {
+                                "href": "/en-US/docs/Learn_web_development/Core"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "your_first_website_creating_the_content"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Your first website: Creating the content",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "This article provides a brief tour of what HTML is and how to use it, aimed at people who are completely new to web development.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "structuring_content_with_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Structuring content with HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Learn_web_development/Core/Structuring_content"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "This module covers the basics of the HTML language, before looking at key areas such as document structure, links, lists, images, forms, and more.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "html_forms"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "HTML forms",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Learn_web_development/Extensions/Forms"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Forms are a very important part of the Web — these provide much of the functionality you need for interacting with websites, e.g., registering and logging in, sending feedback, buying products, and mo",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "guides"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "guides",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Guides",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#guides"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "Thehelp you build with HTML on the web. They cover topics such as forms, CORS, content preloading, and responsive images.",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "HTML guides",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Guides"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "html_cheatsheet_for_syntax_and_common_tasks"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "HTML cheatsheet for syntax and common tasks",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Cheatsheet"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Quick reference for common HTML syntax and tasks.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_html_comments_!--_…_--"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using HTML comments",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Comments"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "<!-- … -->",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "HTML comments are used to add explanatory notes to the markup or to prevent the browser from interpreting specific parts of the document.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_html_form_validation_and_the_constraint_validation_api"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using HTML form validation and the Constraint Validation API",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Constraint_validation"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "HTML5 introduced constraint validation to ease form validation on the client side. Basic constraints can be checked without JavaScript by setting attributes on form elements.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "content_categories"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Content categories",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Content_categories"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "HTML is comprised of several kinds of content, each of which is allowed to be used in certain contexts and is disallowed in others. Similarly, each context has a set of other content categories it can",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_date_and_time_formats_in_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using date and time formats in HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Date_and_time_formats"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Certain HTML elements use date and/or time values. This guide describes the formats of the strings that specify these values.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_microdata_in_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using microdata in HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Microdata"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Microdata is used to nest metadata within existing content on web pages. Search engines and web crawlers can extract and process microdata to provide a richer browsing experience.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_microformats_in_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using microformats in HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Microformats"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Microformats are standards used to embed semantics and structured data in HTML for use by social web applications, search engines, aggregators, and other tools.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "understanding_quirks_and_standards_modes"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Understanding quirks and standards modes",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Quirks_mode_and_standards_mode"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Historical information on quirks mode and standards mode.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "using_responsive_images_in_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Using responsive images in HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Guides/Responsive_images"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Learn about responsive images that work well on devices with widely differing screen sizes, resolutions, and other features, improving performance across different devices.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "media_types_and_formats_on_the_web"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Media types and formats on the web",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/Media/Guides/Formats"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Theandelements allow you to play audio and video media natively within your content without the need for external software support.",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Web/HTML/Reference/Elements/audio"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": "<audio>",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Web/HTML/Reference/Elements/video"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": "<video>",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "how_to"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "how_to",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "How to",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#how_to"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "define_terms_with_html"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Define terms with HTML",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/Define_terms_with_HTML"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "HTML provides several ways to convey description semantics, whether inline or as structured glossaries. This article shows how to properly mark up keywords when defining them.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "use_data_attributes"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Use data attributes",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/Use_data_attributes"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "HTML5 is designed with extensibility in mind for data that should be associated with a particular element but need not have any defined meaning.attributes allow us to store extra information on standa",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "data-*",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "use_cross-origin_images_in_a_canvas"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Use cross-origin images in a canvas",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/CORS_enabled_image"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Some HTML elements that provide support for, such asor, have aattribute (property), which lets you configure the CORS requests for the element's fetched data.",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "CORS",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Web/HTTP/Guides/CORS"
+                                      }
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Web/HTML/Reference/Elements/img"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": "<img>",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Web/HTML/Reference/Elements/video"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": "<video>",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "crossorigin",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "crossOrigin",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "add_a_hitmap_on_top_of_an_image"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Add a hitmap on top of an image",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/Add_a_hit_map_on_top_of_an_image"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Image maps allow hyperlinks to be associated with different parts of an image. This article shows how to create and implement them.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "author_fast-loading_html_pages"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Author fast-loading HTML pages",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/Author_fast-loading_HTML_pages"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "These tips are based on common knowledge and experimentation. An optimized web page not only provides for a more responsive site for your visitors but also reduces the load on your web servers and int",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "add_javascript_to_your_web_page"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Add JavaScript to your web page",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/How_to/Add_JavaScript_to_your_web_page"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "This article explains how to add JavaScript code to an HTML file.",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "reference"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "reference",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Reference",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#reference"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "HTML consists of, each of which may be modified by some number of. HTML documents are connected to each other with. Browse the completedocumentation.",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "strong",
+                              "role": "",
+                              "text": "elements",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "strong",
+                              "role": "",
+                              "text": "attributes",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "strong",
+                              "role": "",
+                              "text": "links",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "HTML reference",
+                              "attrs": {
+                                "href": "/en-US/docs/Web/HTML/Reference"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "html_elements"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "HTML elements",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Elements"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Reference for all HTML.",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "elements",
+                                      "attrs": {
+                                        "href": "/en-US/docs/Glossary/Element"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "html_attributes"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "HTML attributes",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Attributes"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Reference for all HTML attributes. Attributes are additional values that configure elements or adjust their behavior in various ways.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "global_attributes"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Global attributes",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Global_attributes"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Reference for global attributes that may be specified on all HTML elements,. This means that any non-standard elements must still permit these attributes, even though those elements make the document ",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "em",
+                                      "role": "",
+                                      "text": "even those not specified in the standard",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "attributes_by_element"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "attributes_by_element",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Attributes by element",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#attributes_by_element"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "input_types"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Input types",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Elements/input"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Used to create interactive controls for web-based forms.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "script_types"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Script types",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Elements/script/type"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Indicates the type of script represented by the element.",
+                                  "attrs": {}
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "meta_name"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "meta name",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Elements/meta/name"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Provides metadata in name-value pairs for the whole page.",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "attribute_values"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "attribute_values",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Attribute values",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#attribute_values"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "rel_keywords"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "rel keywords",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/Reference/Attributes/rel"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Defines the relationship between a linked resource and the current document.",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section"
+                      },
+                      "aria": {
+                        "aria-labelledby": "related_topics"
+                      },
+                      "children": [
+                        {
+                          "tag": "h2",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "related_topics",
+                            "class": "heading"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Related topics",
+                              "attrs": {
+                                "class": "heading-anchor",
+                                "href": "#related_topics"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "dl",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "dt",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "applying_color_to_html_elements_using_css"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Applying color to HTML elements using CSS",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/CSS/Guides/Colors/Applying_color"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "dd",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "This article covers most of the ways you use CSS to add color to HTML content, listing what parts of HTML documents can be colored and what CSS properties to use when doing so.",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "content-section article-footer"
+                      },
+                      "aria": {
+                        "aria-labelledby": "feedback"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "article-footer__inner"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "article-footer__svg-container"
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "mask",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "id": "b"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "path",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "path",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "ellipse",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "g",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "path",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "g",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "path",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "defs",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "clippath",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "id": "c"
+                                          }
+                                        },
+                                        {
+                                          "tag": "clippath",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "id": "d"
+                                          }
+                                        },
+                                        {
+                                          "tag": "lineargradient",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "id": "a"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "h2",
+                              "role": "",
+                              "text": "Help improve MDN",
+                              "attrs": {
+                                "id": "feedback"
+                              }
+                            },
+                            {
+                              "tag": "mdn-content-feedback",
+                              "role": "",
+                              "text": "",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Learn how to contribute",
+                              "attrs": {
+                                "class": "article-footer__contribute",
+                                "href": "/en-US/docs/MDN/Community/Getting_started"
+                              }
+                            },
+                            {
+                              "tag": "p",
+                              "role": "",
+                              "text": "This page was last modified onby.",
+                              "attrs": {
+                                "class": "article-footer__last-modified"
+                              },
+                              "children": [
+                                {
+                                  "tag": "time",
+                                  "role": "",
+                                  "text": "Dec 22, 2025",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MDN contributors",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web/HTML/contributors.txt"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "•",
+                              "attrs": {
+                                "class": "article-footer__links"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "View this page on GitHub",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://github.com/mdn/content/blob/main/files/en-us/web/html/index.md?plain=1",
+                                    "title": "Folder: en-us/web/html (Opens in a new tab)"
+                                  }
+                                },
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Report a problem with this content",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://github.com/mdn/content/issues/new?template=page-report.yml&mdn-url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML&metadata=%3C%21--+Do+not+make+changes+below+this+line+--%3E%0A%3Cdetails%3E%0A%3Csummary%3EPage+report+details%3C%2Fsummary%3E%0A%0A*+Folder%3A+%60en-us%2Fweb%2Fhtml%60%0A*+MDN+URL%3A+https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FWeb%2FHTML%0A*+GitHub+URL%3A+https%3A%2F%2Fgithub.com%2Fmdn%2Fcontent%2Fblob%2Fmain%2Ffiles%2Fen-us%2Fweb%2Fhtml%2Findex.md%...",
+                                    "title": "This will take you to GitHub to file a new issue."
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "page-layout__footer"
+      },
+      "children": [
+        {
+          "tag": "mdn-placement-bottom",
+          "role": "",
+          "text": "",
+          "attrs": {}
+        },
+        {
+          "tag": "footer",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "footer"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__mdn"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__intro"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "footer__logo",
+                        "href": "/"
+                      },
+                      "aria": {
+                        "aria-label": "MDN logo"
+                      },
+                      "children": [
+                        {
+                          "tag": "svg",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "title",
+                              "role": "",
+                              "text": "MDN",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "path",
+                              "role": "",
+                              "text": "",
+                              "attrs": {}
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Your blueprint for a better internet.",
+                      "attrs": {}
+                    }
+                  ]
+                },
+                {
+                  "tag": "ul",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__socials"
+                  },
+                  "children": [
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "href": "https://github.com/mdn/"
+                          },
+                          "aria": {
+                            "aria-label": "MDN on GitHub"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "href": "https://bsky.app/profile/developer.mozilla.org"
+                          },
+                          "aria": {
+                            "aria-label": "MDN on Bluesky"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "href": "https://x.com/mozdevnet"
+                          },
+                          "aria": {
+                            "aria-label": "MDN on X"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "href": "https://mastodon.social/@mdn"
+                          },
+                          "aria": {
+                            "aria-label": "MDN on Mastodon"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "href": "/en-US/blog/rss.xml"
+                          },
+                          "aria": {
+                            "aria-label": "MDN blog RSS feed"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "dl",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__links"
+                  },
+                  "children": [
+                    {
+                      "tag": "dt",
+                      "role": "",
+                      "text": "MDN",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "dd",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "About",
+                                  "attrs": {
+                                    "href": "/en-US/about"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Blog",
+                                  "attrs": {
+                                    "href": "/en-US/blog/"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Mozilla careers",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://www.mozilla.org/en-US/careers/listings/"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Advertise with us",
+                                  "attrs": {
+                                    "href": "/en-US/advertising"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MDN Plus",
+                                  "attrs": {
+                                    "href": "/en-US/plus"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Product help",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://support.mozilla.org/products/mdn-plus"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "dl",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__links"
+                  },
+                  "children": [
+                    {
+                      "tag": "dt",
+                      "role": "",
+                      "text": "Contribute",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "dd",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MDN Community",
+                                  "attrs": {
+                                    "href": "/en-US/community"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Community resources",
+                                  "attrs": {
+                                    "href": "/en-US/docs/MDN/Community"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Writing guidelines",
+                                  "attrs": {
+                                    "href": "/en-US/docs/MDN/Writing_guidelines"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MDN Discord",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "/discord"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MDN on GitHub",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://github.com/mdn"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "dl",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__links"
+                  },
+                  "children": [
+                    {
+                      "tag": "dt",
+                      "role": "",
+                      "text": "Developers",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "dd",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Web technologies",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Web"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Learn web development",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Learn_web_development"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Guides",
+                                  "attrs": {
+                                    "href": "/en-US/docs/MDN/Guides"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Tutorials",
+                                  "attrs": {
+                                    "href": "/en-US/docs/MDN/Tutorials"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Glossary",
+                                  "attrs": {
+                                    "href": "/en-US/docs/Glossary"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Hacks blog",
+                                  "attrs": {
+                                    "class": "external",
+                                    "href": "https://hacks.mozilla.org/"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__mozilla"
+              },
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "footer__logo",
+                    "href": "https://www.mozilla.org/"
+                  },
+                  "aria": {
+                    "aria-label": "Mozilla logo"
+                  },
+                  "children": [
+                    {
+                      "tag": "svg",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "title",
+                          "role": "",
+                          "text": "Mozilla",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "path",
+                          "role": "",
+                          "text": "",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "ul",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "Website Privacy Notice",
+                          "attrs": {
+                            "class": "external",
+                            "href": "https://www.mozilla.org/privacy/websites/"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "Telemetry Settings",
+                          "attrs": {
+                            "class": "external",
+                            "href": "https://www.mozilla.org/en-US/privacy/websites/data-preferences/"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "Legal",
+                          "attrs": {
+                            "class": "external",
+                            "href": "https://www.mozilla.org/about/legal/terms/mozilla"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "Community Participation Guidelines",
+                          "attrs": {
+                            "class": "external",
+                            "href": "https://www.mozilla.org/about/governance/policies/participation/"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "p",
+                  "role": "",
+                  "text": "Visitnot-for-profit parent, the.Portions of this content are ©1998–2026 by individual mozilla.org contributors. Content available under.",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Mozilla Corporation’s",
+                      "attrs": {
+                        "href": "https://www.mozilla.org/"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Mozilla Foundation",
+                      "attrs": {
+                        "href": "https://foundation.mozilla.org/"
+                      }
+                    },
+                    {
+                      "tag": "br",
+                      "role": "",
+                      "text": "",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "a Creative Commons license",
+                      "attrs": {
+                        "href": "/docs/MDN/Writing_guidelines/Attrib_copyright_license"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "main_landmarks": [],
+  "body_class": "page-layout",
+  "state_hint": "article"
+}

@@ -1,0 +1,3393 @@
+{
+  "adapter_id": "pypi",
+  "url": "https://pypi.org/project/requests/",
+  "title": "requests · PyPI",
+  "timestamp": "2026-05-17T13:36:57.218Z",
+  "elements": [
+    {
+      "tag": "a",
+      "role": "",
+      "text": "Skip to main content",
+      "attrs": {
+        "class": "skip-to-content",
+        "href": "#content"
+      }
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "sticky-notifications",
+        "class": "stick-to-top js-stick-to-top"
+      },
+      "children": [
+        {
+          "tag": "noscript",
+          "role": "",
+          "text": "<div class=\"notification-bar notification-bar--warning\" role=\"status\">\n            <span class=\"notification-bar__icon\">\n              <i class=\"fa fa-exclamation-triangle\" aria-hidden=\"true\"></i>\n   ",
+          "attrs": {}
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "3fba505e-4a8a-4a50-ac6d-265e2cb492cb",
+                "class": "notification-bar notification-bar--banner notification-bar--dismissable notification-bar--visible"
+              },
+              "children": [
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "notification-bar__icon"
+                  },
+                  "children": [
+                    {
+                      "tag": "i",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "fa fa-ticket"
+                      },
+                      "aria": {
+                        "aria-hidden": "true"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "Join us at PyCon US 2026 in Long Beach, CA starting May 13! Grab your ticket today before they're gone.",
+                  "attrs": {
+                    "class": "notification-bar__message"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "PYCON US: TICKET SALES ENDING SOON!",
+                      "attrs": {
+                        "class": "button button--dark button--small button--primary",
+                        "href": "https://us.pycon.org/2026/attend/information/"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "button",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "notification-bar__dismiss",
+                    "type": "button",
+                    "title": "Dismiss this notification"
+                  },
+                  "aria": {
+                    "aria-label": "Close"
+                  },
+                  "children": [
+                    {
+                      "tag": "i",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "fa fa-times"
+                      },
+                      "aria": {
+                        "aria-hidden": "true"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {}
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {}
+    },
+    {
+      "tag": "header",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "site-header "
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "site-container"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "split-layout"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "split-layout"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "site-header__logo",
+                            "href": "/"
+                          },
+                          "children": [
+                            {
+                              "tag": "img",
+                              "role": "",
+                              "text": "PyPI",
+                              "attrs": {
+                                "src": "/static/images/logo-small.8998e9d1.svg",
+                                "alt": "PyPI"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "form",
+                      "role": "search",
+                      "text": "",
+                      "attrs": {
+                        "class": "search-form search-form--primary"
+                      },
+                      "children": [
+                        {
+                          "tag": "label",
+                          "role": "",
+                          "text": "Search PyPI",
+                          "attrs": {
+                            "class": "sr-only"
+                          }
+                        },
+                        {
+                          "tag": "input",
+                          "role": "",
+                          "text": "Type '/' to search projects",
+                          "attrs": {
+                            "id": "search",
+                            "class": "search-form__search",
+                            "name": "q",
+                            "type": "text",
+                            "placeholder": "Type '/' to search projects"
+                          }
+                        },
+                        {
+                          "tag": "button",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "search-form__button",
+                            "type": "submit"
+                          },
+                          "children": [
+                            {
+                              "tag": "i",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "fa fa-search"
+                              },
+                              "aria": {
+                                "aria-hidden": "true"
+                              }
+                            },
+                            {
+                              "tag": "span",
+                              "role": "",
+                              "text": "Search",
+                              "attrs": {
+                                "class": "sr-only"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "id": "user-indicator",
+                        "class": "horizontal-menu horizontal-menu--light horizontal-menu--tall"
+                      },
+                      "children": [
+                        {
+                          "tag": "nav",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "horizontal-menu horizontal-menu--light horizontal-menu--tall hide-on-tablet"
+                          },
+                          "aria": {
+                            "aria-label": "Main navigation"
+                          },
+                          "children": [
+                            {
+                              "tag": "ul",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "horizontal-menu__item"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Help",
+                                      "attrs": {
+                                        "class": "horizontal-menu__link",
+                                        "href": "/help/"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "horizontal-menu__item"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Docs",
+                                      "attrs": {
+                                        "class": "horizontal-menu__link",
+                                        "href": "https://docs.pypi.org/"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "horizontal-menu__item"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Sponsors",
+                                      "attrs": {
+                                        "class": "horizontal-menu__link",
+                                        "href": "/sponsors/"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "horizontal-menu__item"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Log in",
+                                      "attrs": {
+                                        "class": "horizontal-menu__link",
+                                        "href": "/account/login/?next=https%3A%2F%2Fpypi.org%2Fproject%2Frequests%2F"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "horizontal-menu__item"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Register",
+                                      "attrs": {
+                                        "class": "horizontal-menu__link",
+                                        "href": "/account/register/"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "content"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "banner"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "package-header"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "package-header__left"
+                  },
+                  "children": [
+                    {
+                      "tag": "h1",
+                      "role": "",
+                      "text": "requests 2.34.2",
+                      "attrs": {
+                        "class": "package-header__name"
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "package-header__pip-instructions"
+                          },
+                          "children": [
+                            {
+                              "tag": "span",
+                              "role": "",
+                              "text": "pip install requests",
+                              "attrs": {
+                                "id": "pip-command"
+                              }
+                            },
+                            {
+                              "tag": "button",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "copy-tooltip copy-tooltip-s",
+                                "type": "button"
+                              },
+                              "children": [
+                                {
+                                  "tag": "i",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "fa fa-copy"
+                                  },
+                                  "aria": {
+                                    "aria-hidden": "true"
+                                  }
+                                },
+                                {
+                                  "tag": "span",
+                                  "role": "",
+                                  "text": "Copy PIP instructions",
+                                  "attrs": {
+                                    "class": "sr-only"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "package-header__right"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "status-badge status-badge--good",
+                        "href": "/project/requests/"
+                      },
+                      "children": [
+                        {
+                          "tag": "span",
+                          "role": "",
+                          "text": "Latest version",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Released:",
+                      "attrs": {
+                        "class": "package-header__date"
+                      },
+                      "children": [
+                        {
+                          "tag": "time",
+                          "role": "",
+                          "text": "May 15, 2026",
+                          "attrs": {
+                            "title": "2026-05-15 03:25:26 (+08:00)"
+                          },
+                          "aria": {
+                            "aria-label": "2026-05-15 03:25:26 (+08:00)"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "horizontal-section horizontal-section--grey horizontal-section--thin"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "site-container"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "split-layout split-layout--middle package-description"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Python HTTP for Humans.",
+                      "attrs": {
+                        "class": "package-description__summary"
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "tabs-container"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "vertical-tabs"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "vertical-tabs__tabs"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sidebar-section"
+                          },
+                          "children": [
+                            {
+                              "tag": "h3",
+                              "role": "",
+                              "text": "Navigation",
+                              "attrs": {
+                                "class": "sidebar-section__title"
+                              }
+                            },
+                            {
+                              "tag": "nav",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "aria": {
+                                "aria-label": "Navigation for requests"
+                              },
+                              "children": [
+                                {
+                                  "tag": "ul",
+                                  "role": "tablist",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "vertical-tabs__list"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "li",
+                                      "role": "tab",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "a",
+                                          "role": "",
+                                          "text": "Project description",
+                                          "attrs": {
+                                            "id": "description-tab",
+                                            "class": "vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active",
+                                            "href": "#description"
+                                          },
+                                          "aria": {
+                                            "aria-selected": "true",
+                                            "aria-label": "Project description. Focus will be moved to the description."
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "tab",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "a",
+                                          "role": "",
+                                          "text": "Release history",
+                                          "attrs": {
+                                            "id": "history-tab",
+                                            "class": "vertical-tabs__tab vertical-tabs__tab--with-icon",
+                                            "href": "#history"
+                                          },
+                                          "aria": {
+                                            "aria-label": "Release history. Focus will be moved to the history panel."
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "tab",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "a",
+                                          "role": "",
+                                          "text": "Download files",
+                                          "attrs": {
+                                            "id": "files-tab",
+                                            "class": "vertical-tabs__tab vertical-tabs__tab--with-icon",
+                                            "href": "#files"
+                                          },
+                                          "aria": {
+                                            "aria-label": "Download files. Focus will be moved to the project files."
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sidebar-section verified"
+                          },
+                          "children": [
+                            {
+                              "tag": "h3",
+                              "role": "",
+                              "text": "Verified details",
+                              "attrs": {
+                                "class": "sidebar-section__title"
+                              },
+                              "children": [
+                                {
+                                  "tag": "i",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "fa fa-circle-check check",
+                                    "title": "Verified by PyPI on 2026-05-14"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "small",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "i",
+                                  "role": "",
+                                  "text": "These details have been",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "verified by PyPI",
+                                      "attrs": {
+                                        "href": "https://docs.pypi.org/project_metadata/#verified-details"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "h6",
+                              "role": "",
+                              "text": "Project links",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "ul",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "vertical-tabs__list"
+                              },
+                              "children": [
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Source",
+                                      "attrs": {
+                                        "class": "vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed",
+                                        "href": "https://github.com/psf/requests"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "i",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "fab fa-github"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "true"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "h6",
+                              "role": "",
+                              "text": "GitHub Statistics",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "h6",
+                              "role": "",
+                              "text": "Maintainers",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "span",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "sidebar-section__maintainer"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "href": "/user/graffatcolmingov/"
+                                  },
+                                  "aria": {
+                                    "aria-label": ""
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Avatar for graffatcolmingov from gravatar.com",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/cc51c37d0c7604e3c0825efceb9e26f84427f67e/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f33393665336465353333323061626639383535643931326364336439343331663f73697a653d3530",
+                                            "alt": "Avatar for graffatcolmingov from gravatar.com",
+                                            "title": "Avatar for graffatcolmingov from gravatar.com"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "graffatcolmingov",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar-text"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "span",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "sidebar-section__maintainer"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "href": "/user/Lukasa/"
+                                  },
+                                  "aria": {
+                                    "aria-label": ""
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Avatar for Lukasa from gravatar.com",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/c79bcf4dbcf29e6ff2393371939bec26953fab5f/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f62356165656530356138663435326339623131336435313239383065623065343f73697a653d3530",
+                                            "alt": "Avatar for Lukasa from gravatar.com",
+                                            "title": "Avatar for Lukasa from gravatar.com"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "Lukasa",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar-text"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "span",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "sidebar-section__maintainer"
+                              },
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "href": "/user/nateprewitt/"
+                                  },
+                                  "aria": {
+                                    "aria-label": ""
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Avatar for nateprewitt from gravatar.com",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/b35e3b7909504680a0db25a146ec8ef1028830e6/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f66333733383231373065396436613962363632653739353331313730343232653f73697a653d3530",
+                                            "alt": "Avatar for nateprewitt from gravatar.com",
+                                            "title": "Avatar for nateprewitt from gravatar.com"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "nateprewitt",
+                                      "attrs": {
+                                        "class": "sidebar-section__user-gravatar-text"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sidebar-section unverified"
+                          },
+                          "children": [
+                            {
+                              "tag": "h3",
+                              "role": "",
+                              "text": "Unverified details",
+                              "attrs": {
+                                "class": "sidebar-section__title"
+                              }
+                            },
+                            {
+                              "tag": "small",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "i",
+                                  "role": "",
+                                  "text": "These details havebeen verified by PyPI",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "b",
+                                      "role": "",
+                                      "text": "not",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "h6",
+                              "role": "",
+                              "text": "Project links",
+                              "attrs": {}
+                            },
+                            {
+                              "tag": "ul",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "vertical-tabs__list"
+                              },
+                              "children": [
+                                {
+                                  "tag": "li",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "Documentation",
+                                      "attrs": {
+                                        "class": "vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed",
+                                        "href": "https://requests.readthedocs.io"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "i",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "fas fa-book"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "true"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "sidebar-section unverified"
+                              },
+                              "children": [
+                                {
+                                  "tag": "h6",
+                                  "role": "",
+                                  "text": "Meta",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "ul",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "Apache Software License (Apache-2.0)",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "Python >=3.10",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": ",,",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "sidebar-section unverified"
+                              },
+                              "children": [
+                                {
+                                  "tag": "h6",
+                                  "role": "",
+                                  "text": "Classifiers",
+                                  "attrs": {
+                                    "class": "sidebar-section__title"
+                                  }
+                                },
+                                {
+                                  "tag": "ul",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "sidebar-section__classifiers"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Development Status",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Environment",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Intended Audience",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "License",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Natural Language",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Operating System",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Programming Language",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "strong",
+                                          "role": "",
+                                          "text": "Topic",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "ul",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sidebar-section"
+                          }
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sidebar-section"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "button",
+                              "text": "Report project as malware",
+                              "attrs": {
+                                "class": "button button--full-width button--warning",
+                                "href": "https://pypi.org/project/requests/submit-malware-report/"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "vertical-tabs__panel"
+                      },
+                      "children": [
+                        {
+                          "tag": "nav",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "aria": {
+                            "aria-label": "Navigation for requests"
+                          },
+                          "children": [
+                            {
+                              "tag": "ul",
+                              "role": "tablist",
+                              "text": "",
+                              "attrs": {
+                                "class": "vertical-tabs__list"
+                              },
+                              "children": [
+                                {
+                                  "tag": "li",
+                                  "role": "tab",
+                                  "text": "",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "tab",
+                                  "text": "",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "tab",
+                                  "text": "",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "li",
+                                  "role": "tab",
+                                  "text": "",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "tabpanel",
+                          "text": "",
+                          "attrs": {
+                            "id": "description",
+                            "class": "vertical-tabs__content"
+                          },
+                          "aria": {
+                            "aria-labelledby": "description-tab mobile-description-tab"
+                          },
+                          "children": [
+                            {
+                              "tag": "h2",
+                              "role": "",
+                              "text": "Project description",
+                              "attrs": {
+                                "class": "page-title"
+                              }
+                            },
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "project-description"
+                              },
+                              "children": [
+                                {
+                                  "tag": "h1",
+                                  "role": "",
+                                  "text": "Requests",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://pypi.org/project/requests/"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Version",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/506b1a4c6b40f7ef7d0602fddd7a98ff5ac8467d/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f72657175657374732e7376673f6d61784167653d3836343030",
+                                            "alt": "Version"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://pypi.org/project/requests"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Supported Versions",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/508b21fb70f4bc69e3d62730b3ac3c307a209bca/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f72657175657374732e737667",
+                                            "alt": "Supported Versions"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://pepy.tech/project/requests"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Downloads",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/2757478eed0aacd27f29fb7253fdc8b8ca900354/68747470733a2f2f7374617469632e706570792e746563682f62616467652f72657175657374732f6d6f6e7468",
+                                            "alt": "Downloads"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://github.com/psf/requests/graphs/contributors"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Contributors",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/ea4a3e8164c289858e9bdc8e83e5425979d1fb3e/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636f6e7472696275746f72732f7073662f72657175657374732e737667",
+                                            "alt": "Contributors"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://requests.readthedocs.io"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Documentation",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/3c4d0123fd7c83cd9f16c559866a2cf1cb569a96/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f72657175657374732f62616467652f3f76657273696f6e3d6c6174657374",
+                                            "alt": "Documentation"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "is a simple, yet elegant, HTTP library.",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "strong",
+                                      "role": "",
+                                      "text": "Requests",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "pre",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "import",
+                                      "attrs": {
+                                        "class": "kn"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "requests",
+                                      "attrs": {
+                                        "class": "nn"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "=",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "requests",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "get",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "(",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'https://httpbin.org/basic-auth/user/pass'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ",",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "auth",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "=",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "(",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'user'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ",",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'pass'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "))",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "status_code",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "200",
+                                      "attrs": {
+                                        "class": "mi"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "headers",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "[",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'content-type'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "]",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'application/json; charset=utf8'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "encoding",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'utf-8'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "text",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'{\"authenticated\": true, ...'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ">>>",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "r",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": ".",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "json",
+                                      "attrs": {
+                                        "class": "n"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "()",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "{",
+                                      "attrs": {
+                                        "class": "p"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "'authenticated'",
+                                      "attrs": {
+                                        "class": "s1"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your&data — but nowadays, just use themethod!",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "PUT",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "POST",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "json",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Requests is one of the most downloaded Python packages today, pulling in around— according to GitHub, Requests is currentlybyrepositories.",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "300M downloads / week",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "depended upon",
+                                      "attrs": {
+                                        "href": "https://github.com/psf/requests/network/dependents?package_id=UGFja2FnZS01NzA4OTExNg%3D%3D"
+                                      }
+                                    },
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "4,000,000+",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "h2",
+                                  "role": "",
+                                  "text": "Installing Requests and Supported Versions",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Requests is available on PyPI:",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "pre",
+                                  "role": "",
+                                  "text": "python-mpipinstallrequests",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "$",
+                                      "attrs": {
+                                        "class": "gp"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Requests officially supports Python 3.10+.",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "h2",
+                                  "role": "",
+                                  "text": "Supported Features & Best–Practices",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "Requests is ready for the demands of building robust and reliable HTTP–speaking applications, for the needs of today.",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "ul",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Keep-Alive & Connection Pooling",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "International Domains and URLs",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Sessions with Cookie Persistence",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Browser-style TLS/SSL Verification",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Basic & Digest Authentication",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Familiar–like Cookies",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": "dict",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Automatic Content Decompression and Decoding",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Multi-part File Uploads",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "SOCKS Proxy Support",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Connection Timeouts",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Streaming Downloads",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Automatic honoring of",
+                                      "attrs": {},
+                                      "children": [
+                                        {
+                                          "tag": "code",
+                                          "role": "",
+                                          "text": ".netrc",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "li",
+                                      "role": "",
+                                      "text": "Chunked HTTP Requests",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "h2",
+                                  "role": "",
+                                  "text": "Cloning the repository",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "When cloning the Requests repository, you may need to add theflag to avoid an error about a bad commit timestamp (seefor more background):",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "code",
+                                      "role": "",
+                                      "text": "-c fetch.fsck.badTimezone=ignore",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "this issue",
+                                      "attrs": {
+                                        "href": "https://github.com/psf/requests/issues/2690"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "pre",
+                                  "role": "",
+                                  "text": "gitclone-cfetch.fsck.badTimezoneignorehttps://github.com/psf/requests.git",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "=",
+                                      "attrs": {
+                                        "class": "o"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "You can also apply this setting to your global Git config:",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "pre",
+                                  "role": "",
+                                  "text": "gitconfig--globalfetch.fsck.badTimezoneignore",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    },
+                                    {
+                                      "tag": "span",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "w"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "hr",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "p",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://kennethreitz.org"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Kenneth Reitz",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/9ccac975f9a405d76d40072b700ba9137de9c19a/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7073662f72657175657374732f6d61696e2f6578742f6b722e706e67",
+                                            "alt": "Kenneth Reitz"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "https://www.python.org/psf"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "img",
+                                          "role": "",
+                                          "text": "Python Software Foundation",
+                                          "attrs": {
+                                            "src": "https://pypi-camo.freetls.fastly.net/78df7a4e37f894af3fe57b07e37c10f51822d696/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7073662f72657175657374732f6d61696e2f6578742f7073662e706e67",
+                                            "alt": "Python Software Foundation"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "footer"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "footer__logo"
+          },
+          "children": [
+            {
+              "tag": "img",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "-js-white-cube",
+                "src": "/static/images/white-cube.2351a86c.svg"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "footer__menus"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__menu"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "Help",
+                  "attrs": {}
+                },
+                {
+                  "tag": "nav",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "aria": {
+                    "aria-label": "Help navigation"
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Installing packages",
+                              "attrs": {
+                                "href": "https://packaging.python.org/tutorials/installing-packages/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Uploading packages",
+                              "attrs": {
+                                "href": "https://packaging.python.org/tutorials/packaging-projects/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "User guide",
+                              "attrs": {
+                                "href": "https://packaging.python.org/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Project name retention",
+                              "attrs": {
+                                "href": "https://www.python.org/dev/peps/pep-0541/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "FAQs",
+                              "attrs": {
+                                "href": "/help/"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__menu"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "About PyPI",
+                  "attrs": {}
+                },
+                {
+                  "tag": "nav",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "aria": {
+                    "aria-label": "About PyPI navigation"
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "PyPI Blog",
+                              "attrs": {
+                                "href": "https://blog.pypi.org",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Infrastructure dashboard",
+                              "attrs": {
+                                "href": "https://dtdg.co/pypi",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Statistics",
+                              "attrs": {
+                                "href": "/stats/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Logos & trademarks",
+                              "attrs": {
+                                "href": "/trademarks/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Our sponsors",
+                              "attrs": {
+                                "href": "/sponsors/"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__menu"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "Contributing to PyPI",
+                  "attrs": {}
+                },
+                {
+                  "tag": "nav",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "aria": {
+                    "aria-label": "How to contribute navigation"
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Bugs and feedback",
+                              "attrs": {
+                                "href": "/help/#feedback"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Contribute on GitHub",
+                              "attrs": {
+                                "href": "https://github.com/pypi/warehouse",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Translate PyPI",
+                              "attrs": {
+                                "href": "https://hosted.weblate.org/projects/pypa/warehouse/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Sponsor PyPI",
+                              "attrs": {
+                                "href": "/sponsors/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Development credits",
+                              "attrs": {
+                                "href": "https://github.com/pypi/warehouse/graphs/contributors",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "footer__menu"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "Using PyPI",
+                  "attrs": {}
+                },
+                {
+                  "tag": "nav",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "aria": {
+                    "aria-label": "Using PyPI navigation"
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Terms of Service",
+                              "attrs": {
+                                "href": "https://policies.python.org/pypi.org/Terms-of-Service/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Report security issue",
+                              "attrs": {
+                                "href": "/security/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Code of conduct",
+                              "attrs": {
+                                "href": "https://policies.python.org/python.org/code-of-conduct/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Privacy Notice",
+                              "attrs": {
+                                "href": "https://policies.python.org/pypi.org/Privacy-Notice/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "Acceptable Use Policy",
+                              "attrs": {
+                                "href": "https://policies.python.org/pypi.org/Acceptable-Use-Policy/",
+                                "title": "External link"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "hr",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "footer__divider"
+          }
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "footer__text"
+          },
+          "children": [
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Status:",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "href": "https://status.python.org/",
+                    "title": "External link"
+                  },
+                  "children": [
+                    {
+                      "tag": "span",
+                      "role": "",
+                      "text": "All Systems Operational",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Developed and maintained by the Python community, for the Python community.",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "br",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Donate today!",
+                  "attrs": {
+                    "href": "https://donate.pypi.org"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "\"PyPI\", \"Python Package Index\", and the blocks logos are registeredof the.",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "trademarks",
+                  "attrs": {
+                    "href": "/trademarks/"
+                  }
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Python Software Foundation",
+                  "attrs": {
+                    "href": "https://www.python.org/psf-landing"
+                  }
+                },
+                {
+                  "tag": "br",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "© 2026",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Python Software Foundation",
+                  "attrs": {
+                    "href": "https://www.python.org/psf-landing/",
+                    "title": "External link"
+                  }
+                },
+                {
+                  "tag": "br",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Site map",
+                  "attrs": {
+                    "href": "/sitemap/"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Deployed from",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "href": "https://github.com/pypi/warehouse/commit/e06f4aac992d423f027fca7ae348ddcc3c9ccf39",
+                    "title": "External link"
+                  },
+                  "children": [
+                    {
+                      "tag": "code",
+                      "role": "",
+                      "text": "e06f4aa",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "centered hide-on-desktop"
+          },
+          "children": [
+            {
+              "tag": "button",
+              "role": "",
+              "text": "Switch to desktop version",
+              "attrs": {
+                "class": "button button--switch-to-desktop",
+                "type": "button"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "language-switcher"
+      },
+      "children": [
+        {
+          "tag": "form",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "ul",
+              "role": "",
+              "text": "",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "English",
+                      "attrs": {
+                        "class": "language-switcher__selected",
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "en"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "español",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "es"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "français",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "fr"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "日本語",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "ja"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "português (Brasil)",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "pt_BR"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "українська",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "uk"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "Ελληνικά",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "el"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "Deutsch",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "de"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "中文 (简体)",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "zh_Hans"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "中文 (繁體)",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "zh_Hant"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "русский",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "ru"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "עברית",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "he"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "Esperanto",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "eo"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "li",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "button",
+                      "role": "",
+                      "text": "한국어",
+                      "attrs": {
+                        "name": "locale_id",
+                        "type": "submit",
+                        "value": "ko"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "main_landmarks": [
+    {
+      "role": "search",
+      "tag": "form",
+      "id": null,
+      "class": "search-form search-form--primary"
+    }
+  ],
+  "body_class": "with-sticky",
+  "state_hint": "project_detail"
+}

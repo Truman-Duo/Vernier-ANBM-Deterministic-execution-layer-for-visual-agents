@@ -1,0 +1,15 @@
+{
+  "task_id": "av_lobsters_1779022701563",
+  "adapter_id": "lobsters",
+  "results": [
+    {
+      "selector": "body",
+      "found": true,
+      "count": 1,
+      "sample_html": "<body data-username=\"\" data-now-unix=\"1779019024\">\n  <header id=\"nav\">\n    <a id=\"logo\" style=\"background-color: #5c0000;\" href=\"/\" title=\"Lobsters (Current traffic: 7%)\"></a>\n    \n\n    <div class=\"na"
+    }
+  ],
+  "url": "https://lobste.rs/",
+  "detected_state": "unknown",
+  "completed_at": "2026-05-17T12:58:21Z"
+}

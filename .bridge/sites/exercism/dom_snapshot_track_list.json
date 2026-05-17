@@ -1,0 +1,3805 @@
+{
+  "adapter_id": "exercism",
+  "url": "https://exercism.org/tracks",
+  "title": "Exercism",
+  "timestamp": "2026-05-17T13:50:37.594Z",
+  "elements": [
+    {
+      "tag": "header",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "site-header"
+      },
+      "children": [
+        {
+          "tag": "a",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "announcement-bar md:block hidden",
+            "href": "https://exercism.org/courses/coding-fundamentals"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "lg-container"
+              },
+              "children": [
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "👋",
+                  "attrs": {
+                    "class": "emoji mr-6"
+                  }
+                },
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "Learning to code? Check out our",
+                  "attrs": {}
+                },
+                {
+                  "tag": "strong",
+                  "role": "",
+                  "text": "Coding Fundamentals",
+                  "attrs": {}
+                },
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "course for beginners!",
+                  "attrs": {}
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "lg-container container"
+          },
+          "children": [
+            {
+              "tag": "a",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "exercism-link xl:block",
+                "href": "/"
+              },
+              "children": [
+                {
+                  "tag": "img",
+                  "role": "",
+                  "text": "Exercism",
+                  "attrs": {
+                    "class": "c-icon",
+                    "src": "https://assets.exercism.org/assets/icons/exercism-with-logo-black-12752bd7fcf6862ba8ad7a2b75e21a9b2409d7fd.svg",
+                    "alt": "Exercism"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "auth-buttons"
+              },
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Sign up",
+                  "attrs": {
+                    "class": "btn-primary btn-xs",
+                    "href": "/users/sign_up"
+                  }
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Log in",
+                  "attrs": {
+                    "class": "btn-secondary btn-xs",
+                    "href": "/users/sign_in?auth_return_to=%2Ftracks"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "c-react-component c-react-wrapper-dropdowns-dropdown"
+              },
+              "children": [
+                {
+                  "tag": "button",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "explore-menu btn-xs btn-enhanced"
+                  },
+                  "aria": {
+                    "aria-label": "Button to open the navigation menu",
+                    "aria-controls": "41d94243-64ab-4013-ad2f-d4491f016f0a",
+                    "aria-haspopup": "true"
+                  },
+                  "children": [
+                    {
+                      "tag": "img",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-icon",
+                        "src": "https://assets.exercism.org/assets/icons/hamburger-7e74aa2e28fa2c1297400d23b3994a60439f7d83.svg"
+                      }
+                    },
+                    {
+                      "tag": "span",
+                      "role": "",
+                      "text": "Explore",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "turbo-frame",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "tf-main"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "id": "page-tracks"
+          },
+          "children": [
+            {
+              "tag": "header",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "tracks-header"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "lg-container container"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "track-icons"
+                      },
+                      "children": [
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/free-pascal.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/elm.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/purescript.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/cpp.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/bash.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/dart.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/crystal.svg"
+                          }
+                        },
+                        {
+                          "tag": "img",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-icon c-track-icon",
+                            "src": "https://assets.exercism.org/tracks/odin.svg"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "h1",
+                      "role": "",
+                      "text": "82 languages for you to master",
+                      "attrs": {
+                        "class": "text-h1"
+                      }
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Become fluent in your chosen programming languages by completing these tracks created by our",
+                      "attrs": {
+                        "class": "text-p-large"
+                      },
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "awesome team of contributors",
+                          "attrs": {
+                            "class": "text-prominentLinkColor",
+                            "href": "/contributing/contributors"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "c-react-component c-react-wrapper-student-tracks-list"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "tracks-list"
+                  },
+                  "children": [
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-search-bar"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "lg-container container"
+                          },
+                          "children": [
+                            {
+                              "tag": "input",
+                              "role": "",
+                              "text": "Search language tracks",
+                              "attrs": {
+                                "class": "--search",
+                                "type": "text",
+                                "placeholder": "Search language tracks"
+                              }
+                            },
+                            {
+                              "tag": "button",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "--filter-btn"
+                              },
+                              "aria": {
+                                "aria-haspopup": "true",
+                                "aria-expanded": "false"
+                              },
+                              "children": [
+                                {
+                                  "tag": "span",
+                                  "role": "",
+                                  "text": "Filter by",
+                                  "attrs": {
+                                    "class": "hidden sm:block sm:mr-12"
+                                  }
+                                },
+                                {
+                                  "tag": "img",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "c-icon",
+                                    "src": "https://assets.exercism.org/assets/icons/chevron-down-5ae28e42ee217bae38f4eb1c119cafd0301dd5f6.svg"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "section",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "lg-container container"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-results-zone"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "--tracks"
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "unjoined-tracks"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/8th"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/abap"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/arm64-assembly"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/arturo"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/awk"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/ballerina"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/bash"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/batch"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/c"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/csharp"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/cpp"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/cairo"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/cfml"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/clojure"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/cobol"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/coffeescript"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/common-lisp"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/crystal"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/d"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/dart"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/delphi"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/elixir"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/elm"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/emacs-lisp"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/erlang"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/euphoria"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/fsharp"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/fortran"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/free-pascal"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/futhark"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/gleam"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/go"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/groovy"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/haskell"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/idris"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/java"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/javascript"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/jq"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/julia"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/kotlin"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/lean"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/lfe"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/lua"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/mips"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/moonscript"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/nim"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/objective-c"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/ocaml"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/odin"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "--track e-hover-grow",
+                                        "href": "https://exercism.org/tracks/perl5"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "--info"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "portal-container"
+      }
+    },
+    {
+      "tag": "footer",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "site-footer"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "external-section pt-48 pb-0"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "lg-container flex flex-col lg:flex-row"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "lhs mr-auto mb-20 lg:mb-0"
+                  },
+                  "children": [
+                    {
+                      "tag": "img",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-icon",
+                        "src": "https://assets.exercism.org/assets/icons/exercism-with-logo-black-12752bd7fcf6862ba8ad7a2b75e21a9b2409d7fd.svg"
+                      }
+                    },
+                    {
+                      "tag": "h2",
+                      "role": "",
+                      "text": "Code practice and mentorship for everyone",
+                      "attrs": {
+                        "class": "text-h3 mb-4"
+                      }
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Develop fluency in 82 programming languages with our unique blend of learning, practice and mentoring. Exercism is fun, effective and 100% free, forever.",
+                      "attrs": {
+                        "class": "text-p-large"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "rhs flex lg:ml-24 flex-col sm:flex-row items-stretch sm:items-center"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Sign up for free",
+                      "attrs": {
+                        "class": "btn-l btn-primary mb-16 sm:mb-0 sm:mr-32",
+                        "href": "/users/sign_up"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Explore languages",
+                      "attrs": {
+                        "class": "btn-l btn-enhanced",
+                        "href": "/tracks"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "bottom"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "lg-container"
+          },
+          "children": [
+            {
+              "tag": "hr",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "site-links mt-24 md:mt-56"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-40"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Editions",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism",
+                                  "attrs": {
+                                    "href": "https://exercism.org/"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Learn to Code",
+                                  "attrs": {
+                                    "href": "https://exercism.org/jiki"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Coding Fundamentals",
+                                  "attrs": {
+                                    "href": "https://exercism.org/jiki"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism for Teams",
+                                  "attrs": {
+                                    "href": "/docs/using/editions/teams"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism Research",
+                                  "attrs": {
+                                    "href": "/docs/using/editions/research"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "About",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "About Exercism",
+                                  "attrs": {
+                                    "href": "/about"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Our team",
+                                  "attrs": {
+                                    "href": "/about/team"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Contributors",
+                                  "attrs": {
+                                    "href": "/contributing/contributors"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Partners",
+                                  "attrs": {
+                                    "href": "/about/supporters/organisations"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Individual supporters",
+                                  "attrs": {
+                                    "href": "/about/supporters/individuals"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Get involved",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism Insiders",
+                                  "attrs": {
+                                    "href": "/insiders"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Contribute",
+                                  "attrs": {
+                                    "href": "/contributing"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Mentor",
+                                  "attrs": {
+                                    "href": "/mentoring"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Donate",
+                                  "attrs": {
+                                    "href": "/donate"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Legal & policies",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Terms of usage",
+                                  "attrs": {
+                                    "href": "/docs/using/legal/terms-of-service"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Privacy policy",
+                                  "attrs": {
+                                    "href": "/docs/using/legal/privacy-policy"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Cookie policy",
+                                  "attrs": {
+                                    "href": "/docs/using/legal/cookie-policy"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Code of conduct",
+                                  "attrs": {
+                                    "href": "/docs/using/legal/code-of-conduct"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Accessibility statement",
+                                  "attrs": {
+                                    "href": "/docs/using/legal/accessibility"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Keep in touch",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism's blog",
+                                  "attrs": {
+                                    "href": "/blog"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Discuss on GitHub",
+                                  "attrs": {
+                                    "href": "https://github.com/exercism/exercism"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Contact us",
+                                  "attrs": {
+                                    "href": "/docs/using/contact"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Report abuse",
+                                  "attrs": {
+                                    "href": "/docs/using/report-abuse"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Get help",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "hr",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "c-divider --small"
+                          }
+                        },
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Exercism's Docs",
+                                  "attrs": {
+                                    "href": "/docs"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Getting started",
+                                  "attrs": {
+                                    "href": "/docs/using/getting-started"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "FAQs",
+                                  "attrs": {
+                                    "href": "/docs/using/faqs"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Installing the CLI",
+                                  "attrs": {
+                                    "href": "/docs/using/solving-exercises/working-locally"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Interactive CLI Walkthrough",
+                                  "attrs": {
+                                    "href": "/cli-walkthrough"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "socials mt-24 mb-40 md:mb-56"
+              },
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "icon twitter",
+                    "href": "https://twitter.com/exercism_io"
+                  },
+                  "children": [
+                    {
+                      "tag": "img",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-icon",
+                        "src": "https://assets.exercism.org/assets/icons/external-site-twitter-6717f73e3402edb200e17233edc6d9aa756d084c.svg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "icon facebook",
+                    "href": "https://facebook.com/exercism.io"
+                  },
+                  "children": [
+                    {
+                      "tag": "img",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-icon",
+                        "src": "https://assets.exercism.org/assets/icons/external-site-facebook-30d7c9862735514b98cc354bc12f460a4a40d26b.svg"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "icon github",
+                    "href": "https://github.com/exercism"
+                  },
+                  "children": [
+                    {
+                      "tag": "img",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-icon",
+                        "src": "https://assets.exercism.org/assets/icons/external-site-github-10a8a76f55f4e6955417df6aa374dd48fab4392b.svg"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "hr",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "tracks mt-32 md:mt-48 mb-32 md:mb-48 md:items-center"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "hidden md:block"
+                  },
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "role": "",
+                      "text": "Our programming language tracks",
+                      "attrs": {
+                        "class": "text-h3"
+                      }
+                    },
+                    {
+                      "tag": "hr",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "c-divider mt-28 mb-36"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-x-32"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "8th",
+                                  "attrs": {
+                                    "href": "/tracks/8th"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "ABAP",
+                                  "attrs": {
+                                    "href": "/tracks/abap"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "ARM64 Assembly",
+                                  "attrs": {
+                                    "href": "/tracks/arm64-assembly"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Arturo",
+                                  "attrs": {
+                                    "href": "/tracks/arturo"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "AWK",
+                                  "attrs": {
+                                    "href": "/tracks/awk"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Ballerina",
+                                  "attrs": {
+                                    "href": "/tracks/ballerina"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Bash",
+                                  "attrs": {
+                                    "href": "/tracks/bash"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Batch Script",
+                                  "attrs": {
+                                    "href": "/tracks/batch"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "C",
+                                  "attrs": {
+                                    "href": "/tracks/c"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "C#",
+                                  "attrs": {
+                                    "href": "/tracks/csharp"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "C++",
+                                  "attrs": {
+                                    "href": "/tracks/cpp"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Cairo",
+                                  "attrs": {
+                                    "href": "/tracks/cairo"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "CFML",
+                                  "attrs": {
+                                    "href": "/tracks/cfml"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Clojure",
+                                  "attrs": {
+                                    "href": "/tracks/clojure"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "COBOL",
+                                  "attrs": {
+                                    "href": "/tracks/cobol"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "CoffeeScript",
+                                  "attrs": {
+                                    "href": "/tracks/coffeescript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Common Lisp",
+                                  "attrs": {
+                                    "href": "/tracks/common-lisp"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Crystal",
+                                  "attrs": {
+                                    "href": "/tracks/crystal"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "D",
+                                  "attrs": {
+                                    "href": "/tracks/d"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Dart",
+                                  "attrs": {
+                                    "href": "/tracks/dart"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Delphi Pascal",
+                                  "attrs": {
+                                    "href": "/tracks/delphi"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Elixir",
+                                  "attrs": {
+                                    "href": "/tracks/elixir"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Elm",
+                                  "attrs": {
+                                    "href": "/tracks/elm"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Emacs Lisp",
+                                  "attrs": {
+                                    "href": "/tracks/emacs-lisp"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Erlang",
+                                  "attrs": {
+                                    "href": "/tracks/erlang"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Euphoria",
+                                  "attrs": {
+                                    "href": "/tracks/euphoria"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "F#",
+                                  "attrs": {
+                                    "href": "/tracks/fsharp"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Fortran",
+                                  "attrs": {
+                                    "href": "/tracks/fortran"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Free Pascal",
+                                  "attrs": {
+                                    "href": "/tracks/free-pascal"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Futhark",
+                                  "attrs": {
+                                    "href": "/tracks/futhark"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Gleam",
+                                  "attrs": {
+                                    "href": "/tracks/gleam"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Go",
+                                  "attrs": {
+                                    "href": "/tracks/go"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Groovy",
+                                  "attrs": {
+                                    "href": "/tracks/groovy"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Haskell",
+                                  "attrs": {
+                                    "href": "/tracks/haskell"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Idris",
+                                  "attrs": {
+                                    "href": "/tracks/idris"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Java",
+                                  "attrs": {
+                                    "href": "/tracks/java"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "JavaScript",
+                                  "attrs": {
+                                    "href": "/tracks/javascript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "jq",
+                                  "attrs": {
+                                    "href": "/tracks/jq"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Julia",
+                                  "attrs": {
+                                    "href": "/tracks/julia"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Kotlin",
+                                  "attrs": {
+                                    "href": "/tracks/kotlin"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Lean",
+                                  "attrs": {
+                                    "href": "/tracks/lean"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Lisp Flavoured Erlang",
+                                  "attrs": {
+                                    "href": "/tracks/lfe"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Lua",
+                                  "attrs": {
+                                    "href": "/tracks/lua"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MIPS Assembly",
+                                  "attrs": {
+                                    "href": "/tracks/mips"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "MoonScript",
+                                  "attrs": {
+                                    "href": "/tracks/moonscript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Nim",
+                                  "attrs": {
+                                    "href": "/tracks/nim"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Objective-C",
+                                  "attrs": {
+                                    "href": "/tracks/objective-c"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "OCaml",
+                                  "attrs": {
+                                    "href": "/tracks/ocaml"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Odin",
+                                  "attrs": {
+                                    "href": "/tracks/odin"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Perl",
+                                  "attrs": {
+                                    "href": "/tracks/perl5"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Pharo",
+                                  "attrs": {
+                                    "href": "/tracks/pharo-smalltalk"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "PHP",
+                                  "attrs": {
+                                    "href": "/tracks/php"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "PowerShell",
+                                  "attrs": {
+                                    "href": "/tracks/powershell"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Prolog",
+                                  "attrs": {
+                                    "href": "/tracks/prolog"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "PureScript",
+                                  "attrs": {
+                                    "href": "/tracks/purescript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Pyret",
+                                  "attrs": {
+                                    "href": "/tracks/pyret"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Python",
+                                  "attrs": {
+                                    "href": "/tracks/python"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "R",
+                                  "attrs": {
+                                    "href": "/tracks/r"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Racket",
+                                  "attrs": {
+                                    "href": "/tracks/racket"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Raku",
+                                  "attrs": {
+                                    "href": "/tracks/raku"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "ReasonML",
+                                  "attrs": {
+                                    "href": "/tracks/reasonml"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Red",
+                                  "attrs": {
+                                    "href": "/tracks/red"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Roc",
+                                  "attrs": {
+                                    "href": "/tracks/roc"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Ruby",
+                                  "attrs": {
+                                    "href": "/tracks/ruby"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Rust",
+                                  "attrs": {
+                                    "href": "/tracks/rust"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Scala",
+                                  "attrs": {
+                                    "href": "/tracks/scala"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col"
+                      },
+                      "children": [
+                        {
+                          "tag": "ul",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Scheme",
+                                  "attrs": {
+                                    "href": "/tracks/scheme"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "SQLite",
+                                  "attrs": {
+                                    "href": "/tracks/sqlite"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Standard ML",
+                                  "attrs": {
+                                    "href": "/tracks/sml"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Swift",
+                                  "attrs": {
+                                    "href": "/tracks/swift"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Tcl",
+                                  "attrs": {
+                                    "href": "/tracks/tcl"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "TypeScript",
+                                  "attrs": {
+                                    "href": "/tracks/typescript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Uiua",
+                                  "attrs": {
+                                    "href": "/tracks/uiua"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Unison",
+                                  "attrs": {
+                                    "href": "/tracks/unison"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "V",
+                                  "attrs": {
+                                    "href": "/tracks/vlang"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Vim script",
+                                  "attrs": {
+                                    "href": "/tracks/vimscript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Visual Basic",
+                                  "attrs": {
+                                    "href": "/tracks/vbnet"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "WebAssembly",
+                                  "attrs": {
+                                    "href": "/tracks/wasm"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Wren",
+                                  "attrs": {
+                                    "href": "/tracks/wren"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "x86-64 Assembly",
+                                  "attrs": {
+                                    "href": "/tracks/x86-64-assembly"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "YAMLScript",
+                                  "attrs": {
+                                    "href": "/tracks/yamlscript"
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "li",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "a",
+                                  "role": "",
+                                  "text": "Zig",
+                                  "attrs": {
+                                    "href": "/tracks/zig"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "col hidden md:block mt-32 xl:mt-0"
+                      },
+                      "children": [
+                        {
+                          "tag": "h3",
+                          "role": "",
+                          "text": "Want to add a language track to Exercism?",
+                          "attrs": {
+                            "class": "text-h6"
+                          }
+                        },
+                        {
+                          "tag": "p",
+                          "role": "",
+                          "text": "Start a new topic in theand let's discuss it.",
+                          "attrs": {
+                            "class": "text-p-base"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "forum",
+                              "attrs": {
+                                "href": "https://forum.exercism.org/c/exercism/4"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "hr",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "legals mt-24 md:mt-32 mb-32 md:mb-40 flex md:items-center flex-col md:flex-row"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "Exercism is a not-for-profit organisation. Its trustees are,and.",
+                  "attrs": {
+                    "class": "company mb-16 md:mb-0 md:mr-32"
+                  },
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "registered in the UK",
+                      "attrs": {
+                        "href": "https://find-and-update.company-information.service.gov.uk/company/11733062"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Katrina Owen",
+                      "attrs": {
+                        "href": "https://exercism.github.io/kytrinyx/"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Jeremy Walker",
+                      "attrs": {
+                        "href": "https://ihid.info/"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "Erik Schierboom",
+                      "attrs": {
+                        "href": "https://erikschierboom.com/"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "© 2026 Exercism",
+                  "attrs": {
+                    "class": "copyright md:ml-auto"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "main_landmarks": [
+    {
+      "role": "navigation",
+      "tag": "nav",
+      "id": null,
+      "class": null
+    }
+  ],
+  "body_class": "namespace- controller-tracks action-index theme-light user-signed_out",
+  "state_hint": "track_list"
+}

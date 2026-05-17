@@ -1,0 +1,498 @@
+{
+  "adapter_id": "mastodon",
+  "url": "https://hachyderm.io/public/local",
+  "title": "Live feeds - Hachyderm.io",
+  "timestamp": "2026-05-17T13:52:03.449Z",
+  "elements": [
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "mastodon",
+        "class": "notranslate app-holder"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "ui"
+              },
+              "children": [
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "columns-area__panels"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "columns-area__panels__main"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "tabs-bar__wrapper"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "id": "tabs-bar__portal"
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "column-header__wrapper"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "h1",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "column-header"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "button",
+                                          "role": "",
+                                          "text": "Live feeds",
+                                          "attrs": {
+                                            "class": "column-header__title"
+                                          }
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "column-header__buttons"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "column-header__collapsible collapsed"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "column-header__collapsible-inner"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "columns-area columns-area--mobile"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "region",
+                              "text": "",
+                              "attrs": {
+                                "class": "column"
+                              },
+                              "aria": {
+                                "aria-label": "Live feeds"
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "account__section-headline"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "active",
+                                        "href": "/public/local"
+                                      },
+                                      "aria": {
+                                        "aria-current": "page"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "This server",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/public/remote"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "Other servers",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "href": "/public"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "All",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "scrollable scrollable--flex"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "dismissable-banner"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "dismissable-banner__action"
+                                          }
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "dismissable-banner__message"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "feed",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "item-list"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "article",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "data-id": "116590201374907794"
+                                          },
+                                          "aria": {
+                                            "aria-posinset": "1",
+                                            "aria-setsize": "20"
+                                          }
+                                        },
+                                        {
+                                          "tag": "article",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "data-id": "116590194366600627"
+                                          },
+                                          "aria": {
+                                            "aria-posinset": "2",
+                                            "aria-setsize": "20"
+                                          }
+                                        },
+                                        {
+                                          "tag": "button",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "load-more",
+                                            "type": "button"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "columns-area__panels__pane columns-area__panels__pane--start columns-area__panels__pane--navigational"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "columns-area__panels__pane__inner"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "navigation-panel"
+                              },
+                              "children": [
+                                {
+                                  "tag": "form",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "search"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "input",
+                                      "role": "",
+                                      "text": "Search",
+                                      "attrs": {
+                                        "class": "search__input",
+                                        "type": "text",
+                                        "placeholder": "Search"
+                                      },
+                                      "aria": {
+                                        "aria-label": "Search"
+                                      }
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "search__icon-wrapper"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "icon icon-search search__icon"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "true"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "navigation-panel__menu"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "column-link column-link--transparent",
+                                        "href": "/explore"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "icon icon-explore column-link__icon"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "true"
+                                          }
+                                        },
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "Trending",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "a",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "column-link column-link--transparent active",
+                                        "href": "/public/local"
+                                      },
+                                      "aria": {
+                                        "aria-current": "page"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "icon icon-globe column-link__icon"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "true"
+                                          }
+                                        },
+                                        {
+                                          "tag": "span",
+                                          "role": "",
+                                          "text": "Live feeds",
+                                          "attrs": {}
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "navigation-panel__legal"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "a",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "column-link column-link--transparent",
+                                            "href": "/about"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "navigation-panel__sign-in-banner"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "hr",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {}
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "sign-in-banner"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "flex-spacer"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {}
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "main_landmarks": [],
+  "body_class": "app-body theme-system custom-scrollbars no-reduce-motion layout-single-column",
+  "state_hint": "feed_partial"
+}

@@ -1,0 +1,34 @@
+{
+  "adapter_id": "_session_log",
+  "url": "https://movie.douban.com/top250",
+  "title": "log",
+  "timestamp": "2026-05-17T13:54:16.309Z",
+  "elements": [],
+  "session_log": [
+    {
+      "time": "21:54:08",
+      "msg": "Using built-in adapter list",
+      "type": "warn"
+    },
+    {
+      "time": "21:54:08",
+      "msg": "Domain guess: douban_movie",
+      "type": "info"
+    },
+    {
+      "time": "21:54:14",
+      "msg": "Scan: douban_movie [movie_list]",
+      "type": "info"
+    },
+    {
+      "time": "21:54:14",
+      "msg": "DOM: 3 elements, 0 landmarks",
+      "type": "info"
+    },
+    {
+      "time": "21:54:14",
+      "msg": "Uploaded: .bridge\\sites\\douban_movie\\dom_snapshot_movie_list.json",
+      "type": "ok"
+    }
+  ]
+}

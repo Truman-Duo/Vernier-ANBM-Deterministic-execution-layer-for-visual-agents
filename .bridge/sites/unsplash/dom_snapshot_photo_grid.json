@@ -1,0 +1,657 @@
+{
+  "adapter_id": "unsplash",
+  "url": "https://unsplash.com/",
+  "title": "Beautiful Free Images & Pictures | Unsplash",
+  "timestamp": "2026-05-17T13:53:53.682Z",
+  "elements": [
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "class": "isolate-KvPA5W"
+      },
+      "children": [
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "wrapper-Iuv5JP"
+          },
+          "children": [
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "class": "sidebar-OaUBVC"
+              },
+              "children": [
+                {
+                  "tag": "nav",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "wrapper-wjgLhe"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "cluster-zM_HK3"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "group-fYx1cB"
+                          },
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "container-plQgEq resetAnchor-rkYpCn",
+                                "href": "/",
+                                "title": "Home — Unsplash"
+                              },
+                              "aria": {
+                                "aria-current": "page"
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "logo-Owwpah icon-HRKfSD"
+                                  },
+                                  "aria": {
+                                    "aria-labelledby": "unsplash-home",
+                                    "aria-hidden": "false"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "desc",
+                                      "role": "",
+                                      "text": "Unsplash logo",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "title",
+                                      "role": "",
+                                      "text": "Unsplash Home",
+                                      "attrs": {
+                                        "id": "unsplash-home"
+                                      }
+                                    },
+                                    {
+                                      "tag": "path",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "group-fYx1cB topOnly-eANjFa"
+                          },
+                          "children": [
+                            {
+                              "tag": "button",
+                              "role": "",
+                              "text": "Photos",
+                              "attrs": {
+                                "id": "base-ui-_R_1olau_",
+                                "class": "resetBtn-aZVYwi menuTrigger-JxVa1T",
+                                "type": "button"
+                              },
+                              "aria": {
+                                "aria-haspopup": "menu",
+                                "aria-label": "Select asset type",
+                                "aria-expanded": "false"
+                              },
+                              "children": [
+                                {
+                                  "tag": "svg",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "menuTriggerIcon-cPI5AT"
+                                  },
+                                  "aria": {
+                                    "aria-hidden": "false"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "desc",
+                                      "role": "",
+                                      "text": "Chevron down",
+                                      "attrs": {}
+                                    },
+                                    {
+                                      "tag": "path",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {}
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "group-fYx1cB"
+                      },
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "base-ui-_R_3b5au_",
+                            "class": "link-clxd7_",
+                            "href": "/login?referrer=%2F"
+                          },
+                          "aria": {
+                            "aria-label": "Log in / Sign up"
+                          },
+                          "children": [
+                            {
+                              "tag": "svg",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "aria": {
+                                "aria-hidden": "false"
+                              },
+                              "children": [
+                                {
+                                  "tag": "desc",
+                                  "role": "",
+                                  "text": "Person",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "path",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "button",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "base-ui-_R_rj5au_",
+                            "class": "resetBtn-aZVYwi link-clxd7_",
+                            "type": "button"
+                          },
+                          "aria": {
+                            "aria-haspopup": "menu",
+                            "aria-label": "Language",
+                            "aria-expanded": "false"
+                          },
+                          "children": [
+                            {
+                              "tag": "svg",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "aria": {
+                                "aria-hidden": "false"
+                              },
+                              "children": [
+                                {
+                                  "tag": "desc",
+                                  "role": "",
+                                  "text": "Localization icon",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "path",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "button",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "id": "base-ui-_R_6t5au_",
+                            "class": "burgerMenuTrigger-KyXJj5 resetBtn-aZVYwi link-clxd7_",
+                            "type": "button"
+                          },
+                          "aria": {
+                            "aria-label": "Menu",
+                            "aria-haspopup": "dialog",
+                            "aria-expanded": "false"
+                          },
+                          "children": [
+                            {
+                              "tag": "svg",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "aria": {
+                                "aria-hidden": "false"
+                              },
+                              "children": [
+                                {
+                                  "tag": "desc",
+                                  "role": "",
+                                  "text": "navigation menu",
+                                  "attrs": {}
+                                },
+                                {
+                                  "tag": "path",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "class": "sidebarContent-ZsvPXr"
+                  },
+                  "children": [
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "banners-gjqFrs"
+                      }
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "nav",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "container-namBsz"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "form-f3GNJD search-VTZ7vY"
+                              },
+                              "children": [
+                                {
+                                  "tag": "form",
+                                  "role": "search",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "roundedForm-yAA_xx form-QKAcJC formNavVariant-oOEDoG textM-yZhvJa",
+                                    "data-testid": "nav-bar-search-form-form"
+                                  },
+                                  "aria": {
+                                    "aria-label": "Find visuals sitewide"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "button",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "button-ns_esx resetBtn-aZVYwi",
+                                        "type": "submit",
+                                        "title": "Search Unsplash",
+                                        "data-testid": "nav-bar-search-form-button"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "svg",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "labelIconRounded-ybOepc inputIcon-PABRJp roundedIconSize-qI43S0"
+                                          },
+                                          "aria": {
+                                            "aria-hidden": "false"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "combobox",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "inputContainer-N3ti0w container-fyTdcY"
+                                      },
+                                      "aria": {
+                                        "aria-haspopup": "listbox",
+                                        "aria-owns": "react-autowhatever-1",
+                                        "aria-expanded": "false"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "input",
+                                          "role": "",
+                                          "text": "Search photos and illustrations",
+                                          "attrs": {
+                                            "class": "roundedInput-DevoOG input-kt4UcU",
+                                            "name": "searchKeyword",
+                                            "type": "search",
+                                            "title": "Search Unsplash",
+                                            "placeholder": "Search photos and illustrations",
+                                            "data-testid": "nav-bar-search-form-input"
+                                          },
+                                          "aria": {
+                                            "aria-autocomplete": "list",
+                                            "aria-controls": "react-autowhatever-1"
+                                          }
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "listbox",
+                                          "text": "",
+                                          "attrs": {
+                                            "id": "react-autowhatever-1",
+                                            "class": "suggestionsContainer-K4rvDS"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "showVisualSearch-W8ycO2"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "button",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "id": "base-ui-_R_3mb9au_",
+                                            "class": "button-ns_esx resetBtn-aZVYwi",
+                                            "type": "button"
+                                          },
+                                          "aria": {
+                                            "aria-label": "Visual search",
+                                            "aria-haspopup": "dialog",
+                                            "aria-expanded": "false"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "class": "sticky-ZdQR25 contentAboveNever-DR4Ysd"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "bottomBorder-MNxP_P"
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "containerPadding-nxjMAw"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "scrollableHorizontalArea-ZapGUg wrapper-qQHeho wrapperRightFadeOut-F9xG4h"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "buttonContainerRight-HUb1Xu buttonContainer-K2uzju"
+                                          }
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "container-UNOZgk"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "role": "",
+                          "text": "",
+                          "attrs": {
+                            "data-testid": "photos-feed-route"
+                          },
+                          "children": [
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {
+                                "class": "headerContainer-twLJzS"
+                              },
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {
+                                    "class": "tabletUpContainer-SSYNrH"
+                                  },
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "class": "gridLayout-sUMwik container-u0cmnd container-HrdtvI containerLayout-KWauke containerPadding-nxjMAw"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "module-zH5iIt"
+                                          }
+                                        },
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "module-zH5iIt"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "tag": "div",
+                              "role": "",
+                              "text": "",
+                              "attrs": {},
+                              "children": [
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {},
+                                  "children": [
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "id": "_R_2nl9au_"
+                                      }
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "id": "_R_4nl9au_"
+                                      },
+                                      "children": [
+                                        {
+                                          "tag": "div",
+                                          "role": "",
+                                          "text": "",
+                                          "attrs": {
+                                            "class": "container-u0cmnd container-HrdtvI containerLayout-KWauke containerPadding-nxjMAw"
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "tag": "div",
+                                      "role": "",
+                                      "text": "",
+                                      "attrs": {
+                                        "id": "_R_6nl9au_"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "tag": "div",
+                                  "role": "",
+                                  "text": "",
+                                  "attrs": {}
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "div",
+                      "role": "",
+                      "text": "",
+                      "attrs": {
+                        "class": "pushToBottom-ORulhq container-Fbh1ad sticky-MI2RJ_"
+                      },
+                      "children": [
+                        {
+                          "tag": "div",
+                          "role": "region",
+                          "text": "",
+                          "attrs": {
+                            "class": "Viewport-IWgilI"
+                          },
+                          "aria": {
+                            "aria-live": "polite",
+                            "aria-atomic": "false",
+                            "aria-relevant": "additions text",
+                            "aria-label": "Notifications"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "div",
+      "role": "",
+      "text": "",
+      "attrs": {
+        "id": "_R_kklau_"
+      }
+    }
+  ],
+  "main_landmarks": [
+    {
+      "role": "search",
+      "tag": "form",
+      "id": null,
+      "class": "roundedForm-yAA_xx form-QKAcJC formNavVariant-oOEDoG textM-yZhvJa"
+    }
+  ],
+  "body_class": "container-V1p2cM light containerWithFontSmoothing-CJjBZo containerWithBackground-w35JoH",
+  "state_hint": "photo_grid"
+}

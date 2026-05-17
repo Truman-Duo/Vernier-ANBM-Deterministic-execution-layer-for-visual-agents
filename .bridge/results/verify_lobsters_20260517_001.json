@@ -1,0 +1,128 @@
+{
+  "task_id": "verify_lobsters_20260517_001",
+  "adapter_id": "lobsters",
+  "results": [
+    {
+      "selector": "ol.stories.list",
+      "found": true,
+      "count": 1,
+      "sample_html": "<ol class=\"stories list \">\n\n\n<li id=\"story_4g74mw\" data-shortid=\"4g74mw\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">122</a>\n  </div>\n  <div class=\"details\">\n    <span role=\"heading\" aria-level=\"1\" class=\"link h-cite u-repost-of\"",
+      "error": null,
+      "label": "story list container (state: story_list)"
+    },
+    {
+      "selector": "ol.stories.list > li.story",
+      "found": true,
+      "count": 25,
+      "sample_html": "<li id=\"story_4g74mw\" data-shortid=\"4g74mw\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">122</a>\n  </div>\n  <div class=\"details\">\n    <span role=\"heading\" aria-level=\"1\" class=\"link h-cite u-repost-of\">\n        <a class=\"u-url\" hr",
+      "error": null,
+      "label": "individual story items"
+    },
+    {
+      "selector": "a.u-url",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"u-url\" href=\"https://ratfactor.com/ascetic-computing\" rel=\"ugc noreferrer\">Ascetic Computing</a>",
+      "error": null,
+      "label": "story title link (microformat)"
+    },
+    {
+      "selector": "a.tag",
+      "found": true,
+      "count": 39,
+      "sample_html": "<a class=\"tag tag_practices\" title=\"Development and team practices\" href=\"/t/practices\">practices</a>",
+      "error": null,
+      "label": "tag links"
+    },
+    {
+      "selector": ".voters .upvoter",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"upvoter\" href=\"/login\">122</a>",
+      "error": null,
+      "label": "vote count"
+    },
+    {
+      "selector": ".domain",
+      "found": true,
+      "count": 24,
+      "sample_html": "<a class=\"domain\" href=\"/domains/ratfactor.com\">ratfactor.com</a>",
+      "error": null,
+      "label": "source domain link"
+    },
+    {
+      "selector": ".byline .u-author",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"u-author h-card\" href=\"/~jbauer\">jbauer</a>",
+      "error": null,
+      "label": "author name"
+    },
+    {
+      "selector": ".comments_label a",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a role=\"heading\" aria-level=\"2\" href=\"/s/4g74mw/ascetic_computing\">\n              21 comments\n            </a>",
+      "error": null,
+      "label": "comment count link"
+    },
+    {
+      "selector": "nav.morelink a",
+      "found": true,
+      "count": 1,
+      "sample_html": "<a rel=\"next\" href=\"/page/2\">Page 2</a>",
+      "error": null,
+      "label": "pagination (Page 2)"
+    },
+    {
+      "selector": "div.story_content",
+      "found": false,
+      "count": 0,
+      "sample_html": null,
+      "error": null,
+      "label": "story detail content (should NOT be on list page)"
+    },
+    {
+      "selector": "div.story_content",
+      "found": false,
+      "count": 0,
+      "sample_html": null,
+      "error": null,
+      "label": "story content (state: story_detail)"
+    },
+    {
+      "selector": "ol.stories.list",
+      "found": true,
+      "count": 1,
+      "sample_html": "<ol class=\"stories list \">\n\n\n<li id=\"story_4g74mw\" data-shortid=\"4g74mw\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">122</a>\n  </div>\n  <div class=\"details\">\n    <span role=\"heading\" aria-level=\"1\" class=\"link h-cite u-repost-of\"",
+      "error": null,
+      "label": "story list container (should NOT be on detail page)"
+    },
+    {
+      "selector": ".details .link a.u-url",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"u-url\" href=\"https://ratfactor.com/ascetic-computing\" rel=\"ugc noreferrer\">Ascetic Computing</a>",
+      "error": null,
+      "label": "detail page title link"
+    },
+    {
+      "selector": "ol.stories.list",
+      "found": true,
+      "count": 1,
+      "sample_html": "<ol class=\"stories list \">\n\n\n<li id=\"story_kiimof\" data-shortid=\"kiimof\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">1</a>\n  </div>\n  <div class=\"details\">\n    <span role=\"heading\" aria-level=\"1\" class=\"link h-cite u-repost-of\">\n",
+      "error": null,
+      "label": "story list on tag-filtered page"
+    },
+    {
+      "selector": "nav.morelink a",
+      "found": true,
+      "count": 1,
+      "sample_html": "<a rel=\"next\" href=\"/t/rust/page/2\">Page 2</a>",
+      "error": null,
+      "label": "pagination on tag-filtered page"
+    }
+  ],
+  "url": "https://lobste.rs/t/rust",
+  "completed_at": "2026-05-17T08:39:27Z"
+}

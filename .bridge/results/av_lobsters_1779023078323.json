@@ -1,0 +1,69 @@
+{
+  "task_id": "av_lobsters_1779023078323",
+  "adapter_id": "lobsters",
+  "results": [
+    {
+      "selector": "ol.stories.list",
+      "found": true,
+      "count": 1,
+      "sample_html": "<ol class=\"stories list \">\n\n\n<li id=\"story_1udl0j\" data-shortid=\"1udl0j\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">37</a>\n  </d"
+    },
+    {
+      "selector": "ol.stories.list > li.story",
+      "found": true,
+      "count": 25,
+      "sample_html": "<li id=\"story_1udl0j\" data-shortid=\"1udl0j\" class=\"story \n\n\n\n\n\">\n<div class=\"story_liner h-entry\">\n  <div class=\"voters\">\n    <a class=\"upvoter\" href=\"/login\">37</a>\n  </div>\n  <div class=\"details\">\n "
+    },
+    {
+      "selector": "a.u-url",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"u-url\" href=\"https://lalinsky.com/2026/05/11/async-io-in-zig-016-today.html\" rel=\"ugc noreferrer\">Async I/O in Zig 0.16, today</a>"
+    },
+    {
+      "selector": "a.tag",
+      "found": true,
+      "count": 39,
+      "sample_html": "<a class=\"tag tag_zig\" title=\"Zig programming\" href=\"/t/zig\">zig</a>"
+    },
+    {
+      "selector": ".voters .upvoter",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"upvoter\" href=\"/login\">37</a>"
+    },
+    {
+      "selector": ".domain",
+      "found": true,
+      "count": 24,
+      "sample_html": "<a class=\"domain\" href=\"/domains/lalinsky.com\">lalinsky.com</a>"
+    },
+    {
+      "selector": ".byline .u-author",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a class=\"u-author h-card\" href=\"/~rcalixte\">rcalixte</a>"
+    },
+    {
+      "selector": ".comments_label a",
+      "found": true,
+      "count": 25,
+      "sample_html": "<a role=\"heading\" aria-level=\"2\" href=\"/s/1udl0j/async_i_o_zig_0_16_today\">\n              4 comments\n            </a>"
+    },
+    {
+      "selector": "nav.morelink a",
+      "found": true,
+      "count": 1,
+      "sample_html": "<a rel=\"next\" href=\"/page/2\">Page 2</a>"
+    },
+    {
+      "selector": "div.story_content",
+      "found": false,
+      "count": 0,
+      "sample_html": null
+    }
+  ],
+  "url": "https://lobste.rs/",
+  "detected_state": "story_list",
+  "completed_at": "2026-05-17T13:04:38Z"
+}

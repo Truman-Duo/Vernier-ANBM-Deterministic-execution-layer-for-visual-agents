@@ -1,0 +1,1057 @@
+{
+  "adapter_id": "liujiacai",
+  "url": "https://en.liujiacai.net/2026/05/16/bun-rust-port/",
+  "title": "My Thoughts on Bun's Rust Rewrite | Jiacai Liu's personal website",
+  "timestamp": "2026-05-17T08:45:39.423Z",
+  "elements": [
+    {
+      "tag": "header",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "children": [
+        {
+          "tag": "a",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "class": "title",
+            "href": "/"
+          },
+          "children": [
+            {
+              "tag": "h2",
+              "role": "",
+              "text": "Jiacai Liu's personal website",
+              "attrs": {}
+            }
+          ]
+        },
+        {
+          "tag": "nav",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Home",
+              "attrs": {
+                "href": "/"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Blog",
+              "attrs": {
+                "href": "/post/"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Tags",
+              "attrs": {
+                "href": "/tags/"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "children": [
+        {
+          "tag": "h1",
+          "role": "",
+          "text": "My Thoughts on Bun's Rust Rewrite",
+          "attrs": {}
+        },
+        {
+          "tag": "p",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "small",
+              "role": "",
+              "text": "",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "time",
+                  "role": "",
+                  "text": "2026-05-16",
+                  "attrs": {}
+                },
+                {
+                  "tag": "time",
+                  "role": "",
+                  "text": "Updated: 2026-05-16",
+                  "attrs": {}
+                },
+                {
+                  "tag": "span",
+                  "role": "",
+                  "text": "tags:",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "zig",
+                      "attrs": {
+                        "href": "/tags/zig"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "rust",
+                      "attrs": {
+                        "href": "/tags/rust"
+                      }
+                    },
+                    {
+                      "tag": "a",
+                      "role": "",
+                      "text": "bun",
+                      "attrs": {
+                        "href": "/tags/bun"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "div",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "id": "table-of-contents"
+          },
+          "children": [
+            {
+              "tag": "h3",
+              "role": "",
+              "text": "Table of Contents",
+              "attrs": {}
+            },
+            {
+              "tag": "nav",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "TableOfContents"
+              },
+              "children": [
+                {
+                  "tag": "ul",
+                  "role": "",
+                  "text": "",
+                  "attrs": {},
+                  "children": [
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "The Real Issue No One Dares to Say",
+                          "attrs": {
+                            "href": "#headline-1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "\"All Tests Pass\" Doesn't Mean What You Think",
+                          "attrs": {
+                            "href": "#headline-2"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "After the Acquisition, the Risk Bearer Has Changed",
+                          "attrs": {
+                            "href": "#headline-3"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "Zig's \"Problems\" Were Misdiagnosed",
+                          "attrs": {
+                            "href": "#headline-4"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "So, Will This Rewrite Work?",
+                          "attrs": {
+                            "href": "#headline-5"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "li",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "References",
+                          "attrs": {
+                            "href": "#headline-6"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tag": "content",
+          "role": "",
+          "text": "",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Before we discuss, there's something that needs to be said, because no one is saying it.",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "a",
+                  "role": "",
+                  "text": "Rewrite Bun in Rust",
+                  "attrs": {
+                    "href": "https://github.com/oven-sh/bun/pull/30412"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Bun stands where it does today because of Zig.",
+              "attrs": {}
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "figure",
+              "role": "",
+              "text": "",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "img",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "src": "https://fs.liujiacai.net/cdn-img/zigcc/bun-rust-port.webp"
+                  }
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "",
+              "attrs": {}
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Jarred chose Zig back then not because it was \"cool,\" but because Zig enabled a small team to rapidly prototype a high-performance JS runtime without a GC, without a heavy runtime. Zig's low friction,",
+              "attrs": {}
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "Jarred himself said: the architecture doesn't change, the data structures don't change.",
+              "attrs": {}
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "In plain English:Building the foundation with Zig, shipping the product with Zig, raising funding with Zig, and then switching to a more \"mainstream\" tech stack after the company gets acquired and has",
+              "attrs": {},
+              "children": [
+                {
+                  "tag": "strong",
+                  "role": "",
+                  "text": "the skeleton that the Rust rewrite inherits was built with Zig.",
+                  "attrs": {}
+                }
+              ]
+            },
+            {
+              "tag": "p",
+              "role": "",
+              "text": "The Zig community doesn't need Bun's gratitude, but please don't pretend this rewrite happened because Zig itself is inadequate.",
+              "attrs": {}
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-1",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "The Real Issue No One Dares to Say",
+                  "attrs": {
+                    "id": "headline-1"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-1",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Now, let's discussitself.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "a",
+                          "role": "",
+                          "text": "the rewrite",
+                          "attrs": {
+                            "href": "https://github.com/oven-sh/bun/pull/30412"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "6,755 commits, branch name, PR opened May 8th, merged May 14th.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "code",
+                          "role": "",
+                          "text": "claude/phase-a-port",
+                          "attrs": {
+                            "class": "verbatim"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Six days. A full rewrite of a production-grade JS runtime, merged in six days.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Let that number sit in your mind for a second.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "There's a fundamental principle in software engineering:Not because it necessarily has bugs, but because when it does bug out, you won't know where to start looking. This principle isn't conservatism ",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "code you don't understand should not run in production.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "6,755 commits, not a single line written by a human. The PR's reviewer list:reviewed it,reviewed it, and the only human reviewer alii's status was \"Awaiting requested review\" – hadn't even looked.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "code",
+                          "role": "",
+                          "text": "coderabbitai[bot]",
+                          "attrs": {
+                            "class": "verbatim"
+                          }
+                        },
+                        {
+                          "tag": "code",
+                          "role": "",
+                          "text": "claude[bot]",
+                          "attrs": {
+                            "class": "verbatim"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Code written by Claude, reviewed by Claude. This closed loop isn't logically impossible, but it means:",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "no human being has actually read this codebase in its entirety.",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-2",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "\"All Tests Pass\" Doesn't Mean What You Think",
+                  "attrs": {
+                    "id": "headline-2"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-2",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Someone will push back here: the test suite passes on all platforms – isn't that validation?",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "No.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "A test suite validatesIt does not validate:",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "the correctness of known behavior on known paths.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "Whether error paths are handled correctly",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "Behavior at boundary conditions under stress",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "State consistency in concurrent scenarios",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "Whether the memory model conforms to intent under extreme conditions",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Jarred himself admitted: memory issues when re-entering across JS boundaries – the Rust compiler can't handle that; it still relies on humans.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "And those parts that rely on humans? No human has reviewed them.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "The more fundamental issue is: AI translates code via– it ensures each function behaves identically to the original in isolation, but it doesn't understand thebetween functions – those design constrai",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "local semantic equivalence",
+                          "attrs": {}
+                        },
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "global invariants",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "This isn't a knock on Claude. This is a problem any translation tool – including human programmers – faces without thorough review. At the scale of 6,755 commits, this risk is amplified 6,755 times.",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-3",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "After the Acquisition, the Risk Bearer Has Changed",
+                  "attrs": {
+                    "id": "headline-3"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-3",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "There's a political-economy dimension here that technical discussions usually ignore.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "In the early days, Bun was Jarred betting on himself. Using Zig then, iterating fast, accepting tech debt – that was reasonable startup logic with self-assumed risk.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Now Bun has been acquired by a major company, and its user base consists of real production systems. The risk bearer of this rewrite is no longer Jarred, but every engineer running Bun in production a",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Jarred says this version is still in canary, and there's optimization and cleanup work to do before official release.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Canary is a line of defense, but it's not human review. Optimization and cleanup are code quality concerns, not comprehension concerns.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "A codebase that no one on the team has fully read – no matter how comprehensive the tests, no matter how long canary runs – its internal state is a black box to its maintainers.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "This will become very real pain at some future severe bug's debugging scene.",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-4",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "Zig's \"Problems\" Were Misdiagnosed",
+                  "attrs": {
+                    "id": "headline-4"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-4",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Let's return to Jarred's stated reasons for migration: the Zig codebase had too many use-after-free bugs, double-frees, and memory leaks on error paths.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "This is true. But the conclusion that \"Zig doesn't work\" drawn from this diagnosis is wrong.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "The correct diagnosis is:This isn't a bug in Zig – it's a structural mismatch between Zig's design goals and Bun's business model.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "in a commercial project that prioritizes rapid iteration, the cognitive tax of manual memory management exceeded the team's budget.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Zig's target users are: systems programmers who know what they're doing and are willing to pay the price for ultimate control. TigerBeetle used Zig to write a database with virtually no memory bugs, b",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Bun's team culture is fast iteration, fast shipping, fast bug fixes. There's a fundamental tension between this and the rigorous memory discipline that Zig demands. This is a mismatch between Bun and ",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Interpreting \"our team frequently makes mistakes with this tool\" as \"this tool is inadequate\" is an attribution error. The hammer doesn't fit, but it's not the hammer's fault.",
+                      "attrs": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-5",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "So, Will This Rewrite Work?",
+                  "attrs": {
+                    "id": "headline-5"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-5",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Honestly:",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "short-term it'll probably be fine; long-term there are structural risks.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Short-term: tests cover the main paths, the canary phase will expose obvious issues, and Rust's compiler guarantees eliminate an entire class of memory bugs. On the surface, everything looks normal.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "Long-term: this codebase has 6,755 commits that no human has fully read. When a bizarre concurrency bug appears six months from now, when some boundary condition triggers anomalous behavior under a sp",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "The difference between these two becomes crystal clear at 3 AM during a production incident.",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "A system no one has understood doesn't mean it has no bugs – it means when bugs appear, no one knows why.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "This is the real technical bet of this rewrite: not Zig vs Rust, but",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "strong",
+                          "role": "",
+                          "text": "whether AI-generated, unreviewed code can be maintained long-term in production environments.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "This question is far more complex than \"all tests pass,\" and far more profound than \"Rust memory safety.\"",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "The answer – we'll wait and see.",
+                      "attrs": {}
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "em",
+                          "role": "",
+                          "text": "Zig built the foundation, Claude erected the building, human reviewers are still en route.",
+                          "attrs": {}
+                        }
+                      ]
+                    },
+                    {
+                      "tag": "p",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "em",
+                          "role": "",
+                          "text": "How long this building remains habitable depends on whether anyone can read the blueprints the first time it springs a leak.",
+                          "attrs": {}
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "id": "outline-container-headline-6",
+                "class": "outline-2"
+              },
+              "children": [
+                {
+                  "tag": "h2",
+                  "role": "",
+                  "text": "References",
+                  "attrs": {
+                    "id": "headline-6"
+                  }
+                },
+                {
+                  "tag": "div",
+                  "role": "",
+                  "text": "",
+                  "attrs": {
+                    "id": "outline-text-headline-6",
+                    "class": "outline-text-2"
+                  },
+                  "children": [
+                    {
+                      "tag": "ul",
+                      "role": "",
+                      "text": "",
+                      "attrs": {},
+                      "children": [
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "https://lobste.rs/s/lapqbz/bun_s_rust_rewrite_has_been_merged",
+                              "attrs": {
+                                "href": "https://lobste.rs/s/lapqbz/bun_s_rust_rewrite_has_been_merged"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "https://news.ycombinator.com/item?id=48132488",
+                              "attrs": {
+                                "href": "https://news.ycombinator.com/item?id=48132488"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "li",
+                          "role": "",
+                          "text": "",
+                          "attrs": {},
+                          "children": [
+                            {
+                              "tag": "a",
+                              "role": "",
+                              "text": "https://ziggit.dev/t/bun-is-being-ported-from-zig-to-rust/15330",
+                              "attrs": {
+                                "href": "https://ziggit.dev/t/bun-is-being-ported-from-zig-to-rust/15330"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tag": "footer",
+      "role": "",
+      "text": "",
+      "attrs": {},
+      "children": [
+        {
+          "tag": "hr",
+          "role": "",
+          "text": "",
+          "attrs": {}
+        },
+        {
+          "tag": "p",
+          "role": "",
+          "text": "©2020 – 2026\n||||",
+          "attrs": {},
+          "children": [
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Jiacai Liu",
+              "attrs": {
+                "href": "/"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "GitHub",
+              "attrs": {
+                "href": "https://github.com/jiacai2050/"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Twitter",
+              "attrs": {
+                "href": "https://twitter.com/liujiacai"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "Mastodon",
+              "attrs": {
+                "href": "https://mastodon.social/@liujiacai"
+              }
+            },
+            {
+              "tag": "a",
+              "role": "",
+              "text": "RSS",
+              "attrs": {
+                "href": "/index.xml"
+              }
+            }
+          ]
+        },
+        {
+          "tag": "a",
+          "role": "",
+          "text": "",
+          "attrs": {
+            "href": "https://www.gnu.org/s/emacs/"
+          },
+          "children": [
+            {
+              "tag": "img",
+              "role": "",
+              "text": "",
+              "attrs": {
+                "src": "https://fs.liujiacai.net/cdn-img/blog/made-with-emacs.webp"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "main_landmarks": [],
+  "body_class": ""
+}
