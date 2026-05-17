@@ -1,11 +1,14 @@
 """
 PyPI Adapter
-选择器选择理由：
-- project_list state: [data-controller='search'] — PyPI 搜索页的根容器，稳定 data-* 属性
-- project_detail state: #description — PyPI 详情页固定 ID，长期稳定
-- 条目容器: .package-snippet — 搜索结果每行容器
-- 包名: .package-snippet__name — 包名链接，class 语义化命名
-- 分页按钮: [aria-label='Next Page'] — 语义化 aria 标签
+选择器选择理由（2026-05-17 更新）：
+- project_list state: url_contains /search/（主检测）+ .package-snippet（also_check — 搜索结果条目容器）
+- project_detail state: #description（PyPI 详情页固定 ID，⚠️ 未经 2026-05 快照验证）
+- 条目容器: .package-snippet — 搜索结果每行容器（2026-05 仍存在）
+- 包名: .package-snippet__title — 替代了旧版 .package-snippet__name（2026-05 重命名）
+- 版本: 从列表页移除（2026-05 改版后 .package-snippet__version 消失）
+- 描述: .package-snippet__description — 仍存在
+- 分页: .button-group--pagination a.button-group__button（text="Next"/"Previous"）— 替代旧版 [aria-label='Next Page']
+- 结果总数: 通过 JS 从页面提取（旧版 .search-results__total 已移除）
 """
 from urllib.parse import quote
 
@@ -39,22 +42,19 @@ class Handler(BaseAdapter):
         raise ValueError(f"act() 不支持操作: {action}")
 
     async def _extract_project_list(self, page):
-        container = await page.query_selector("[data-controller='search']")
-        if not container:
+        snippets = await page.query_selector_all(".package-snippet")
+        if not snippets:
             raise SelectorFailedError(
-                "找不到搜索容器",
-                selector="[data-controller='search']",
+                "找不到搜索结果条目",
+                selector=".package-snippet",
             )
 
-        snippets = await page.query_selector_all(".package-snippet")
         projects = []
         for sn in snippets:
-            name_el = await sn.query_selector(".package-snippet__name")
-            ver_el = await sn.query_selector(".package-snippet__version")
+            name_el = await sn.query_selector(".package-snippet__title")
             desc_el = await sn.query_selector(".package-snippet__description")
 
             name = (await name_el.text_content()).strip() if name_el else ""
-            version = (await ver_el.text_content()).strip() if ver_el else ""
             summary = (await desc_el.text_content()).strip() if desc_el else ""
 
             href = ""
@@ -64,7 +64,7 @@ class Handler(BaseAdapter):
 
             projects.append({
                 "name": name,
-                "version": version,
+                "version": "",
                 "summary": summary,
                 "url": url,
             })
@@ -116,10 +116,10 @@ class Handler(BaseAdapter):
             if not title_el:
                 continue
             title_text = (await title_el.text_content()).strip().lower()
-            value = ""
-            value_el = await sec.query_selector(".sidebar-section__body")
-            if value_el:
-                value = (await value_el.text_content()).strip()
+            # 新版 PyPI 移除了 .sidebar-section__body，直接取 sidebar-section 的全部文本
+            section_text = (await sec.text_content()).strip()
+            # 去掉标题文本得到值
+            value = section_text.replace((await title_el.text_content()).strip(), "").strip()
             if "license" in title_text:
                 license_name = value
             elif "python" in title_text:
@@ -165,12 +165,24 @@ class Handler(BaseAdapter):
 
     async def _act_paginate(self, page, params: dict) -> ActResult:
         direction = params.get("direction", "next")
-        aria = "Next Page" if direction == "next" else "Previous Page"
-        btn = await page.query_selector(f"[aria-label='{aria}']")
+        target_text = "Next" if direction == "next" else "Previous"
+        btn = await page.query_selector(
+            f".button-group--pagination a.button-group__button"
+        )
+        # 可能有多个匹配（数字分页按钮），需要找到文本匹配的那个
+        all_btns = await page.query_selector_all(
+            ".button-group--pagination a.button-group__button"
+        )
+        btn = None
+        for b in all_btns:
+            text = (await b.text_content()).strip()
+            if text == target_text:
+                btn = b
+                break
         if not btn:
             raise SelectorFailedError(
                 f"找不到翻页按钮 ({direction})",
-                selector=f"[aria-label='{aria}']",
+                selector=f".button-group--pagination a:text('{target_text}')",
             )
         await btn.click()
         await page.wait_for_load_state("networkidle", timeout=15000)
@@ -178,16 +190,26 @@ class Handler(BaseAdapter):
 
     async def _parse_total_results(self, page) -> int:
         try:
+            # 新版 PyPI 移除了 .search-results__total，尝试从页面文本提取总数
             text = await page.evaluate(
-                "() => document.querySelector('.search-results__total')?.textContent || ''"
+                "() => {"
+                "  const el = document.querySelector('[aria-label=\"Search results\"]');"
+                "  if (!el) return '';"
+                "  const h = el.querySelector('h2, h3, p');"
+                "  return h ? h.textContent : '';"
+                "}"
             )
             import re
             nums = re.findall(r"[\d,]+", text)
             if nums:
-                return int(nums[-1].replace(",", ""))
+                return int(nums[0].replace(",", ""))
         except Exception:
             pass
-        return 0
+        # 回退：直接数 .package-snippet 数量（当前页条目数）
+        try:
+            return len(await page.query_selector_all(".package-snippet"))
+        except Exception:
+            return 0
 
     @staticmethod
     async def _parse_query(page) -> str:

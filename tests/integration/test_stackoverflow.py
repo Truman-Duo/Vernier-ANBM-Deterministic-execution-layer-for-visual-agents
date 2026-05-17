@@ -24,8 +24,8 @@ SO_MANIFEST = {
         "question_list": {
             "check": {"type": "url_matches", "pattern": "/questions$"},
             "also_check": {
-                "type": "aria_present",
-                "role": "article",
+                "type": "element_present",
+                "selector": ".s-post-summary",
             },
             "allowed_actions": ["paginate", "open_question", "search"],
         },
@@ -39,8 +39,8 @@ SO_MANIFEST = {
         },
         "not_found": {
             "check": {
-                "type": "element_present",
-                "selector": "[data-se-page='404']",
+                "type": "element_absent",
+                "selector": ".s-post-summary",
             },
             "allowed_actions": [],
         },
@@ -146,7 +146,7 @@ async def test_browse_question_list():
     fsm = FSMEngine()
     page = FakePage(
         url=SO_LIST_URL,
-        locators={"role=article": FakeLocator(count=1)},
+        locators={".s-post-summary": FakeLocator(count=1)},
     )
     adapter = MockStackOverflowAdapter()
 
@@ -164,8 +164,8 @@ async def test_browse_question_list():
 
 
 @pytest.mark.asyncio
-async def test_aria_selector_priority():
-    """用 from_html() 加载含 aria 和 CSS class 的 fixture，验证 aria 选择器命中。"""
+async def test_selector_priority():
+    """用 from_html() 加载 fixture，验证新版 Stacks 选择器命中。"""
     from tests.fixtures.mock_pages import FakePage as HTMLPage
 
     page = HTMLPage.from_html(
@@ -176,17 +176,17 @@ async def test_aria_selector_priority():
         url=SO_LIST_URL,
     )
 
-    el = await page.query_selector('[role="article"]')
-    assert el is not None, "[role='article'] 选择器应命中 aria article"
+    el = await page.query_selector('.s-post-summary')
+    assert el is not None, ".s-post-summary 选择器应命中问题卡片容器"
 
-    el = await page.query_selector('[itemprop="upvoteCount"]')
-    assert el is not None, "[itemprop='upvoteCount'] 选择器应命中"
+    el = await page.query_selector('.s-post-summary--stats-item__emphasized .s-post-summary--stats-item-number')
+    assert el is not None, "emphasized stats item number 选择器应命中投票数"
 
-    el = await page.query_selector('[aria-label]')
-    assert el is not None, "aria-label 选择器应命中"
+    el = await page.query_selector('.s-post-summary--stats-item.has-answers .s-post-summary--stats-item-number')
+    assert el is not None, "has-answers stats item number 选择器应命中回答数"
 
     el = await page.query_selector('[rel="tag"]')
-    assert el is not None, "[rel='tag'] 选择器应命中"
+    assert el is not None, "[rel='tag'] 选择器应命中标签"
 
 
 @pytest.mark.asyncio
@@ -195,7 +195,7 @@ async def test_search():
     fsm = FSMEngine()
     page = FakePage(
         url=SO_LIST_URL,
-        locators={"role=article": FakeLocator(count=1)},
+        locators={".s-post-summary": FakeLocator(count=1)},
     )
     adapter = MockStackOverflowAdapter()
 
@@ -255,5 +255,5 @@ async def test_also_check_question_list():
     )
     validator = StateValidator()
     state, _ = await validator.detect_state(page, SO_MANIFEST)
-    # question_list 要求 [role='article'] 存在，空 elements 不满足条件
+    # question_list 要求 .s-post-summary 存在，空 elements 不满足条件
     assert state != "question_list", "also_check 未满足时不应识别为 question_list"

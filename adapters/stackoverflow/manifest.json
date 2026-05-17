@@ -2,11 +2,15 @@
   "id": "stackoverflow",
   "name": "Stack Overflow",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "verified_selectors": [".s-post-summary", "h3 a.s-link", "[rel='tag']", ".s-pagination", ".s-post-summary--stats-item-number", "[role='combobox']"],
+  "unverified_selectors": ["[itemprop='name']", "[itemprop='text']", "[aria-label='Up vote']"],
+  "unverified_note": "详情页 4 个选择器 2026-05-17 已更新（itemprop→Stacks class，rel=tag→.post-tag）。列表页全部选择器已验证。",
+  "test_url": "https://stackoverflow.com/questions",
   "url_patterns": [
     "https://stackoverflow.com/questions",
     "https://stackoverflow.com/questions/*"
   ],
-  "test_url": "https://stackoverflow.com/questions",
   "output_schema": {
     "question_list": {
       "questions": "array",
@@ -28,9 +32,9 @@
     "question_list": {
       "check": {"type": "url_matches", "pattern": "/questions$"},
       "also_check": {
-        "type": "aria_present",
-        "role": "article",
-        "fallback_description": "Stack Overflow 问题列表中每道问题的卡片容器，包含标题、投票数、标签"
+        "type": "element_present",
+        "selector": ".s-post-summary",
+        "fallback_description": "SO 问题列表项容器（2026-05 改版后替代 [role='article']），使用 Stacks 设计系统 .s-post-summary 类名"
       },
       "allowed_actions": ["paginate", "open_question", "search"]
     },
@@ -44,9 +48,9 @@
     },
     "not_found": {
       "check": {
-        "type": "element_present",
-        "selector": "[data-se-page='404']",
-        "fallback_description": "Stack Overflow 404 错误页面，URL 对应的问题不存在"
+        "type": "element_absent",
+        "selector": ".s-post-summary",
+        "fallback_description": "无 .s-post-summary 卡片且前面状态均未匹配时判定为 not_found（旧版 [data-se-page='404'] 已在 2026-05 改版中移除）"
       },
       "allowed_actions": []
     }

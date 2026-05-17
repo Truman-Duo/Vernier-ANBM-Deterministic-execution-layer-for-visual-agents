@@ -2,6 +2,10 @@
   "id": "pypi",
   "name": "PyPI",
   "version": "1.0.0",
+  "last_verified": "2026-05-17",
+  "verified_selectors": ["package-snippet", "package-snippet__title", "package-snippet__description", "button-group--pagination"],
+  "unverified_selectors": ["#description", ".package-header__name", ".sidebar-section", "no-results"],
+  "unverified_note": "详情页 .sidebar-section__body 已移除，2026-05-17 已改用 section 整体文本提取。列表页全部选择器已验证。",
   "test_url": "https://pypi.org/search/?q=requests",
   "url_patterns": [
     "https://pypi.org/search/*",
@@ -25,13 +29,14 @@
   "states": {
     "project_list": {
       "check": {
-        "type": "element_present",
-        "selector": "[data-controller='search']",
-        "fallback_description": "搜索结果容器，含 data-controller=search 属性"
+        "type": "url_contains",
+        "value": "/search/",
+        "fallback_description": "PyPI 搜索页 URL 固定包含 /search/"
       },
       "also_check": {
-        "type": "element_absent",
-        "selector": "#description"
+        "type": "element_present",
+        "selector": ".package-snippet",
+        "fallback_description": "搜索结果条目，2026-05 版 PyPI 使用 .package-snippet 作为条目容器"
       },
       "allowed_actions": ["filter_version", "open_project", "paginate"]
     },
@@ -39,19 +44,19 @@
       "check": {
         "type": "element_present",
         "selector": "#description",
-        "fallback_description": "包描述区域，PyPI 详情页专属元素"
+        "fallback_description": "包描述区域，PyPI 详情页专属元素（⚠️ 2026-05-17 未经快照验证）"
       },
       "also_check": {
         "type": "element_absent",
-        "selector": "[data-controller='search']"
+        "selector": ".package-snippet"
       },
       "allowed_actions": ["extract_content"]
     },
     "not_found": {
       "check": {
-        "type": "element_present",
-        "selector": ".no-results",
-        "fallback_description": "搜索无结果提示区域"
+        "type": "element_absent",
+        "selector": ".package-snippet",
+        "fallback_description": "无搜索结果时 .package-snippet 不存在，且无 #description 表明非详情页"
       },
       "allowed_actions": ["filter_version"]
     }

@@ -1,18 +1,30 @@
 """
-Stack Overflow Adapter — aria 优先选择器策略的验证实现。
+Stack Overflow Adapter — Stacks 设计系统选择器策略（2026-05-17 更新）。
 
-选择器优先级与理由：
-  [role="article"]           → aria role 是 WAI-ARIA 标准属性，前端重构时很少改动
-  h3 > a.s-link              → h3 是语义化标题标签，.s-link 是 Stacks 设计系统类名（稳定）
-  [itemprop="upvoteCount"]   → itemprop 是微数据标准属性，搜索引擎依赖，冻结概率极低
-  [aria-label$="answers"]    → aria-label 末尾匹配 answers，避免数字导致选择器失效
-  [rel="tag"]                → rel 属性标记分类关系，独立于 UI 框架
-  [role="searchbox"]         → aria role 标准搜索框标识，比 input#id 稳定
-  [rel="next"]               → rel="next" 表示翻页链接，语义化标记
-  [data-se-page='404']       → data-se-* 是 Stacks 的自定义数据属性，内部使用频次低
+2026-05 改版变化：
+  - SO 移除了 WAI-ARIA roles（[role='article'] 消失）
+  - SO 移除了 schema.org 微数据（[itemprop='upvoteCount'] 消失）
+  - SO 移除了 Stacks data-* 属性（[data-se-page] 消失）
+  - 搜索框 role 从 searchbox 改为 combobox
 
-所有 CSS class 选择器（.s-link, .post-tag, .s-prose 等）作为备选，
-在 aria 选择器不可用时作为回退。当前 handler 优先使用 aria/data 选择器。
+新版选择器（基于 Stacks 设计系统类名 + 保留的语义属性）：
+  .s-post-summary               → 问题列表卡片容器（替代 [role='article']）
+  h3 a.s-link                   → 标题链接（Stacks 设计系统，仍有效）
+  .s-post-summary--stats-item__emphasized .s-post-summary--stats-item-number
+                                → 投票数（替代 [itemprop='upvoteCount']）
+  .s-post-summary--stats-item.has-answers .s-post-summary--stats-item-number
+                                → 回答数（替代 [aria-label$='answers']）
+  [rel="tag"]                   → 标签（rel 属性仍有效）
+  [role="combobox"]             → 搜索框（替代 [role='searchbox']）
+  .s-pagination .js-pagination-item → 翻页链接（替代 [rel='next']）
+
+⚠️ 详情页选择器（2026-05-17 bridge 快照验证更新）：
+  a.question-hyperlink         → 问题标题链接（替代 [itemprop='name']）
+  .s-prose.js-post-body        → 问题正文（替代 [itemprop='text']）
+  .js-vote-count               → 投票数（替代 [itemprop='upvoteCount']）
+  .post-tag                    → 标签（替代 [rel='tag']，详情页无 rel 属性）
+  [aria-label$="answers"]      → 回答数（仍有效）
+  [aria-label="Up vote"]       → upvote 按钮（仍有效）
 """
 
 from anbm.adapter.base import BaseAdapter, ExtractResult, ActResult, SelectorFailedError
@@ -22,31 +34,31 @@ class Handler(BaseAdapter):
 
     async def extract(self, page, state: str) -> ExtractResult:
         if state == "question_list" or state == "search_results":
-            articles = await page.query_selector_all('[role="article"]')
+            cards = await page.query_selector_all(".s-post-summary")
             questions = []
-            for article in articles:
-                title_el = await article.query_selector("h3 > a.s-link")
+            for card in cards:
+                title_el = await card.query_selector("h3 a.s-link")
                 title = (await title_el.text_content()).strip() if title_el else ""
 
                 href = ""
                 if title_el:
                     href = await title_el.get_attribute("href") or ""
 
-                vote_el = await article.query_selector(
-                    '[itemprop="upvoteCount"]'
+                vote_el = await card.query_selector(
+                    ".s-post-summary--stats-item__emphasized .s-post-summary--stats-item-number"
                 )
                 vote_count = (
                     (await vote_el.text_content()).strip() if vote_el else "0"
                 )
 
-                answer_el = await article.query_selector(
-                    '[aria-label$="answers"]'
+                answer_el = await card.query_selector(
+                    ".s-post-summary--stats-item.has-answers .s-post-summary--stats-item-number"
                 )
                 answer_count = ""
                 if answer_el:
                     answer_count = (await answer_el.text_content()).strip()
 
-                tag_els = await article.query_selector_all('[rel="tag"]')
+                tag_els = await card.query_selector_all('[rel="tag"]')
                 tags = []
                 for tag_el in tag_els:
                     text = (await tag_el.text_content()).strip()
@@ -67,22 +79,22 @@ class Handler(BaseAdapter):
             )
 
         elif state == "question_detail":
-            title_el = await page.query_selector('h1 [itemprop="name"]')
+            title_el = await page.query_selector('a.question-hyperlink')
             title = (await title_el.text_content()).strip() if title_el else ""
 
-            body_el = await page.query_selector('[itemprop="text"]')
+            body_el = await page.query_selector('.s-prose.js-post-body')
             body_text = ""
             if body_el:
                 first_p = await body_el.query_selector("p")
                 if first_p:
                     body_text = (await first_p.text_content()).strip()
 
-            vote_el = await page.query_selector('[itemprop="upvoteCount"]')
+            vote_el = await page.query_selector('.js-vote-count')
             vote_count = (
                 (await vote_el.text_content()).strip() if vote_el else "0"
             )
 
-            tag_els = await page.query_selector_all('[rel="tag"]')
+            tag_els = await page.query_selector_all('.post-tag')
             tags = []
             for tag_el in tag_els:
                 text = (await tag_el.text_content()).strip()
@@ -111,14 +123,23 @@ class Handler(BaseAdapter):
 
     async def act(self, page, action: str, params: dict) -> ActResult:
         if action == "paginate":
-            link = await page.query_selector('[rel="next"]')
-            if not link:
+            # 新版 SO 翻页：找到 is-selected 的下一页
+            next_href = await page.evaluate(
+                "() => {"
+                "  const selected = document.querySelector('.s-pagination--item.is-selected');"
+                "  if (!selected) return null;"
+                "  const next = selected.nextElementSibling;"
+                "  if (!next || !next.classList.contains('js-pagination-item')) return null;"
+                "  return next.href;"
+                "}"
+            )
+            if not next_href:
                 raise SelectorFailedError(
                     "找不到翻页链接",
-                    selector='[rel="next"]',
+                    selector=".s-pagination .js-pagination-item (next after is-selected)",
                 )
-            await link.click()
-            await page.wait_for_load_state("networkidle")
+            await page.goto(next_href)
+            await page.wait_for_load_state("domcontentloaded")
             return ActResult(success=True, next_state=None)
 
         elif action == "open_question":
@@ -126,7 +147,7 @@ class Handler(BaseAdapter):
             if not url:
                 raise SelectorFailedError(
                     "open_question 需要 url 参数",
-                    selector="[role='article'] h3 > a.s-link",
+                    selector=".s-post-summary h3 a.s-link",
                 )
             await page.goto(url)
             await page.wait_for_load_state("domcontentloaded")
@@ -137,13 +158,13 @@ class Handler(BaseAdapter):
             if not query:
                 raise SelectorFailedError(
                     "search 需要 query 参数",
-                    selector='[role="searchbox"]',
+                    selector='[role="combobox"]',
                 )
-            searchbox = await page.query_selector('[role="searchbox"]')
+            searchbox = await page.query_selector('[role="combobox"]')
             if not searchbox:
                 raise SelectorFailedError(
                     "找不到搜索框",
-                    selector='[role="searchbox"]',
+                    selector='[role="combobox"]',
                 )
             await searchbox.fill(query)
             await searchbox.press("Enter")
